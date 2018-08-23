@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_output_of_all_incidents));
             this.DGV_all_incidents = new System.Windows.Forms.DataGridView();
             this.btn_exit = new System.Windows.Forms.Button();
+            this.FIO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_all_incidents)).BeginInit();
             this.SuspendLayout();
             // 
@@ -40,6 +41,8 @@
             this.DGV_all_incidents.AllowUserToDeleteRows = false;
             this.DGV_all_incidents.AllowUserToOrderColumns = true;
             this.DGV_all_incidents.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGV_all_incidents.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.FIO});
             this.DGV_all_incidents.Location = new System.Drawing.Point(13, 13);
             this.DGV_all_incidents.Name = "DGV_all_incidents";
             this.DGV_all_incidents.ReadOnly = true;
@@ -55,6 +58,12 @@
             this.btn_exit.Text = "Выход";
             this.btn_exit.UseVisualStyleBackColor = true;
             this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
+            // 
+            // FIO
+            // 
+            this.FIO.HeaderText = "ФИО";
+            this.FIO.Name = "FIO";
+            this.FIO.ReadOnly = true;
             // 
             // Form_output_of_all_incidents
             // 
@@ -75,5 +84,6 @@
 
         private System.Windows.Forms.DataGridView DGV_all_incidents;
         private System.Windows.Forms.Button btn_exit;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FIO;
     }
 }
