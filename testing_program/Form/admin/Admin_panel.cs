@@ -200,5 +200,11 @@ namespace testing_program
             form_insert_reference_values form_Insert_Reference_Values = new form_insert_reference_values();
             form_Insert_Reference_Values.ShowDialog();
         }
+
+        private void btn_show_all_incidents_Click(object sender, EventArgs e)
+        {
+            Form_output_of_all_incidents form_Output_Of_All_Incidents = new Form_output_of_all_incidents();
+            form_Output_Of_All_Incidents.Show();
+        }
     }
 }

@@ -64,6 +64,7 @@
             this.btn_create_new_instruct = new System.Windows.Forms.Button();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.btn_inset_new_info_people_in_work = new System.Windows.Forms.Button();
+            this.btn_show_all_incidents = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -194,6 +195,7 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.btn_show_all_incidents);
             this.tabPage4.Controls.Add(this.btn_insert_reference_values);
             this.tabPage4.Controls.Add(this.btn_create_new_type_result_check);
             this.tabPage4.Controls.Add(this.btn_create_new_Name_type_check_knowledge);
@@ -450,6 +452,16 @@
             this.btn_inset_new_info_people_in_work.UseVisualStyleBackColor = true;
             this.btn_inset_new_info_people_in_work.Click += new System.EventHandler(this.btn_inset_new_info_people_in_work_Click);
             // 
+            // btn_show_all_incidents
+            // 
+            this.btn_show_all_incidents.Location = new System.Drawing.Point(497, 154);
+            this.btn_show_all_incidents.Name = "btn_show_all_incidents";
+            this.btn_show_all_incidents.Size = new System.Drawing.Size(216, 26);
+            this.btn_show_all_incidents.TabIndex = 17;
+            this.btn_show_all_incidents.Text = "Показать все инциденты";
+            this.btn_show_all_incidents.UseVisualStyleBackColor = true;
+            this.btn_show_all_incidents.Click += new System.EventHandler(this.btn_show_all_incidents_Click);
+            // 
             // Admin_panel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -508,5 +520,6 @@
         private System.Windows.Forms.Button btn_create_new_Info_check_knowledge;
         private System.Windows.Forms.Button btn_create_new_type_result_check;
         private System.Windows.Forms.Button btn_insert_reference_values;
+        private System.Windows.Forms.Button btn_show_all_incidents;
     }
 }
