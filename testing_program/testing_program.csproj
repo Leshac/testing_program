@@ -256,6 +256,12 @@
     <Compile Include="Form\admin\form_reference\form_insert_reference_values.Designer.cs">
       <DependentUpon>form_insert_reference_values.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form\Form_output_of_all_incidents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Form_output_of_all_incidents.Designer.cs">
+      <DependentUpon>Form_output_of_all_incidents.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interface\Create_interface_form_question.cs" />
     <Compile Include="Interface\create_label.cs" />
     <Compile Include="Interface\Create_Radio_Button.cs" />
@@ -372,6 +378,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form\admin\form_reference\form_insert_reference_values.resx">
       <DependentUpon>form_insert_reference_values.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Form_output_of_all_incidents.resx">
+      <DependentUpon>Form_output_of_all_incidents.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
