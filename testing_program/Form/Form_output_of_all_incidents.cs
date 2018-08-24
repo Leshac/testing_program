@@ -14,7 +14,7 @@ namespace testing_program
     public partial class Form_output_of_all_incidents : Form
     {
         private DataGridView dgv_all_accident = new DataGridView();
-        const int ColumnCount=9;
+        const int ColumnCount=10;
         public Form_output_of_all_incidents()
         {
             InitializeComponent();
@@ -43,6 +43,7 @@ namespace testing_program
             dgv_all_accident.Columns[6].Name = "Пол";
             dgv_all_accident.Columns[7].Name = "Дата происшествия";
             dgv_all_accident.Columns[8].Name = "Время от начала смены";
+            dgv_all_accident.Columns[9].Name = "Причина происшествия";
         }
 
         private void Populate_dgv()
@@ -59,16 +60,23 @@ namespace testing_program
                               " Acc.Age_on_accident," +
                               " Sex.Name," +
                               "Acc.Datetime," +
-                              "Acc.[Time_acc_work(in hours)]" +
+                              "Acc.[Time_acc_work(in hours)]," +
+                              "CONCAT(Code_reason.N_code, Code_reason.Name)"+
 
-                              " from People_for_edu," +
-                              " Acc,Type_accident," +
+                              "from People_for_edu," +
+                              "Acc," +
+                              "Type_accident," +
                               "seriuosness," +
-                              " Sex " +
+                              " Sex, " +
+                              "Codes_reason_in_accident, "+
+                              "Code_reason "+
+
                               "where People_for_edu.id=Acc.id_human AND" +
                               " Type_accident.id_type=Acc.id_type AND" +
                               " Acc.id_seriousness=seriuosness.id AND" +
-                              " Sex.id=People_for_edu.id_sex";
+                              " Sex.id=People_for_edu.id_sex AND"+
+                              " Code_reason.id=Codes_reason_in_accident.id_codes AND"+
+                              " Codes_reason_in_accident.id_accident = Acc.id_accident";
             SqlCommand sqlCommand = new SqlCommand(sqlquery, myConnection);
             SqlDataReader reader = sqlCommand.ExecuteReader();
 
@@ -87,6 +95,7 @@ namespace testing_program
                 data[data.Count - 1][6] = reader[6].ToString();
                 data[data.Count - 1][7] = reader[7].ToString();
                 data[data.Count - 1][8] = reader[8].ToString();
+                data[data.Count - 1][9] = reader[9].ToString();
             }
             reader.Close();
 
