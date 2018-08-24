@@ -14,7 +14,7 @@ namespace testing_program
     public partial class Form_output_of_all_incidents : Form
     {
         private DataGridView dgv_all_accident = new DataGridView();
-        const int ColumnCount=10;
+        const int ColumnCount=11;
         public Form_output_of_all_incidents()
         {
             InitializeComponent();
@@ -44,6 +44,7 @@ namespace testing_program
             dgv_all_accident.Columns[7].Name = "Дата происшествия";
             dgv_all_accident.Columns[8].Name = "Время от начала смены";
             dgv_all_accident.Columns[9].Name = "Причина происшествия";
+            dgv_all_accident.Columns[10].Name = "Дата начала трудовой деятельности";
         }
 
         private void Populate_dgv()
@@ -61,7 +62,8 @@ namespace testing_program
                               " Sex.Name," +
                               "Acc.Datetime," +
                               "Acc.[Time_acc_work(in hours)]," +
-                              "CONCAT(Code_reason.N_code, Code_reason.Name)"+
+                              "CONCAT(Code_reason.N_code, Code_reason.Name),"+
+                              "People_for_edu.Date_start_work "+
 
                               "from People_for_edu," +
                               "Acc," +
@@ -96,6 +98,7 @@ namespace testing_program
                 data[data.Count - 1][7] = reader[7].ToString();
                 data[data.Count - 1][8] = reader[8].ToString();
                 data[data.Count - 1][9] = reader[9].ToString();
+                data[data.Count - 1][10] = reader[10].ToString();
             }
             reader.Close();
 
