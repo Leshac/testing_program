@@ -26,13 +26,16 @@ namespace testing_program
         private void DGV_setup()
         {
             this.Controls.Add(dgv_all_accident);
-
+            btn_exit.Location = new Point(SystemInformation.PrimaryMonitorSize.Width-80 , SystemInformation.PrimaryMonitorSize.Height-150);
             dgv_all_accident.ColumnCount = ColumnCount;
             dgv_all_accident.Name = "dgv_all_accident";
             dgv_all_accident.Location = new Point(8, 8);
-             dgv_all_accident.Size = new Size(1000, 700);
+            
+
+            dgv_all_accident.Size = new Size(SystemInformation.PrimaryMonitorSize.Width-100, SystemInformation.PrimaryMonitorSize.Height-100);
+            // dgv_all_accident.Size = new Size(1000, 700);
             //dgv_all_accident.AutoSize = true;
-           // dgv_all_accident.ScrollBars = Both;
+            // dgv_all_accident.ScrollBars = Both;
 
 
             dgv_all_accident.Columns[0].Name = "ФИО";
