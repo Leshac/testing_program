@@ -70,6 +70,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConectionSQL_string.cs" />
     <Compile Include="Form\admin\Admin_panel.cs">
       <SubType>Form</SubType>
     </Compile>

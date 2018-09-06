@@ -16,9 +16,10 @@ namespace testing_program
     {
         // const string string_connection = @"Data Source=tcp:93.170.108.82,1433;Initial Catalog=testing_program;Persist Security Info=True;User ID=dba; Password=sql";
         //const string string_connection = @"Data Source=DESKTOP-O70R3EM,1433;Initial Catalog=testing_program;Persist Security Info=True;User ID=dba; Password=sql";
-         const string string_connection = @"Data Source=tcp:ws0151205,1433;Initial Catalog=testing_program;Persist Security Info=True;User ID=dba; Password=sql";
+        // const string string_connection = @"Data Source=tcp:ws0151205,1433;Initial Catalog=testing_program;Persist Security Info=True;User ID=dba; Password=sql";
         public SqlConnection connect_to_the_database()
         {
+            string string_connection = ConectionSQL_string.sql_string;   
             SqlConnection dbconnect = new SqlConnection(string_connection);
             dbconnect.Open();
             return (dbconnect);
