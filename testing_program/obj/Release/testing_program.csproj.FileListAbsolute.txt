@@ -1,0 +1,12 @@
+E:\program_learning\diplom\testing_program\testing_program\bin\Release\testing.mdf
+E:\program_learning\diplom\testing_program\testing_program\bin\Release\testing_log.ldf
+E:\program_learning\diplom\testing_program\testing_program\bin\Release\testing_program.exe.config
+E:\program_learning\diplom\testing_program\testing_program\bin\Release\testing_program.exe
+E:\program_learning\diplom\testing_program\testing_program\bin\Release\testing_program.pdb
+E:\program_learning\diplom\testing_program\testing_program\obj\Release\testing_program.Form_Authorization.resources
+E:\program_learning\diplom\testing_program\testing_program\obj\Release\testing_program.Properties.Resources.resources
+E:\program_learning\diplom\testing_program\testing_program\obj\Release\testing_program.Form_CHOOSING_TESTS.resources
+E:\program_learning\diplom\testing_program\testing_program\obj\Release\testing_program.csproj.GenerateResource.Cache
+E:\program_learning\diplom\testing_program\testing_program\obj\Release\testing_program.csproj.CoreCompileInputs.cache
+E:\program_learning\diplom\testing_program\testing_program\obj\Release\testing_program.exe
+E:\program_learning\diplom\testing_program\testing_program\obj\Release\testing_program.pdb
