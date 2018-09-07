@@ -69,7 +69,7 @@ namespace testing_program
         {
             string sqlQuery = "Select * FROM \"Authorization\"  where serial_number='" + tb_Serial_Number.Text + "' AND password = '" + tb_Password.Text + "' AND admin ='true'";
 
-            update_DB update_DB = new update_DB();
+          //  update_DB update_DB = new update_DB();
 
             Get_DataTable get_DataTable = new Get_DataTable(sqlQuery);
             get_DataTable.get_DataTable();
