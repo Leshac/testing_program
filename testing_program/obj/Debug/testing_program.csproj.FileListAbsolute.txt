@@ -125,3 +125,47 @@ D:\Program\testing_program\testing_program\obj\Debug\testing_program.csproj.Core
 D:\Program\testing_program\testing_program\obj\Debug\testing_program.exe
 D:\Program\testing_program\testing_program\obj\Debug\testing_program.pdb
 D:\Program\testing_program\testing_program\obj\Debug\testing_program.Form_output_of_all_incidents.resources
+D:\share\OneDrive\магистерская\diplom\Версия для тестирования\testing_program\testing_program\bin\Debug\testing_program.exe.config
+D:\share\OneDrive\магистерская\diplom\Версия для тестирования\testing_program\testing_program\bin\Debug\testing_program.exe
+D:\share\OneDrive\магистерская\diplom\Версия для тестирования\testing_program\testing_program\bin\Debug\testing_program.pdb
+D:\share\OneDrive\магистерская\diplom\Версия для тестирования\testing_program\testing_program\obj\Debug\testing_program.csprojResolveAssemblyReference.cache
+D:\share\OneDrive\магистерская\diplom\Версия для тестирования\testing_program\testing_program\obj\Debug\testing_program.Admin_panel.resources
+D:\share\OneDrive\магистерская\diplom\Версия для тестирования\testing_program\testing_program\obj\Debug\testing_program.form_admin_result.resources
+D:\share\OneDrive\магистерская\diplom\Версия для тестирования\testing_program\testing_program\obj\Debug\testing_program.form_create_new_accident_for_edu.resources
+D:\share\OneDrive\магистерская\diplom\Версия для тестирования\testing_program\testing_program\obj\Debug\testing_program.form_create_new_Code_reason.resources
+D:\share\OneDrive\магистерская\diplom\Версия для тестирования\testing_program\testing_program\obj\Debug\testing_program.form_create_new_enterprise.resources
+D:\share\OneDrive\магистерская\diplom\Версия для тестирования\testing_program\testing_program\obj\Debug\testing_program.form_create_new_name_type_check_knowledge.resources
+D:\share\OneDrive\магистерская\diplom\Версия для тестирования\testing_program\testing_program\obj\Debug\testing_program.form_create_new_OKVED.resources
+D:\share\OneDrive\магистерская\diplom\Версия для тестирования\testing_program\testing_program\obj\Debug\testing_program.form_create_new_OVPF.resources
+D:\share\OneDrive\магистерская\diplom\Версия для тестирования\testing_program\testing_program\obj\Debug\testing_program.form_create_new_profession.resources
+D:\share\OneDrive\магистерская\diplom\Версия для тестирования\testing_program\testing_program\obj\Debug\testing_program.form_create_new_qualification.resources
+D:\share\OneDrive\магистерская\diplom\Версия для тестирования\testing_program\testing_program\obj\Debug\testing_program.form_create_new_seriuosness.resources
+D:\share\OneDrive\магистерская\diplom\Версия для тестирования\testing_program\testing_program\obj\Debug\testing_program.form_create_new_shedule.resources
+D:\share\OneDrive\магистерская\diplom\Версия для тестирования\testing_program\testing_program\obj\Debug\testing_program.form_create_new_topic_instruct.resources
+D:\share\OneDrive\магистерская\diplom\Версия для тестирования\testing_program\testing_program\obj\Debug\testing_program.Form_create_new_Type_accident.resources
+D:\share\OneDrive\магистерская\diplom\Версия для тестирования\testing_program\testing_program\obj\Debug\testing_program.Form_new_user.resources
+D:\share\OneDrive\магистерская\diplom\Версия для тестирования\testing_program\testing_program\obj\Debug\testing_program.form_create_new_type_instruct.resources
+D:\share\OneDrive\магистерская\diplom\Версия для тестирования\testing_program\testing_program\obj\Debug\testing_program.form_create_new_Instruct.resources
+D:\share\OneDrive\магистерская\diplom\Версия для тестирования\testing_program\testing_program\obj\Debug\testing_program.Form_Authorization.resources
+D:\share\OneDrive\магистерская\diplom\Версия для тестирования\testing_program\testing_program\obj\Debug\testing_program.Form_new_questions.resources
+D:\share\OneDrive\магистерская\diplom\Версия для тестирования\testing_program\testing_program\obj\Debug\testing_program.form_create_employ.resources
+D:\share\OneDrive\магистерская\diplom\Версия для тестирования\testing_program\testing_program\obj\Debug\testing_program.form_create_topics.resources
+D:\share\OneDrive\магистерская\diplom\Версия для тестирования\testing_program\testing_program\obj\Debug\testing_program.form_create_new_conditions.resources
+D:\share\OneDrive\магистерская\diplom\Версия для тестирования\testing_program\testing_program\obj\Debug\testing_program.form_create_new_education.resources
+D:\share\OneDrive\магистерская\diplom\Версия для тестирования\testing_program\testing_program\obj\Debug\testing_program.form_add_new_instruct.resources
+D:\share\OneDrive\магистерская\diplom\Версия для тестирования\testing_program\testing_program\obj\Debug\testing_program.form_insert_people_in_instruct.resources
+D:\share\OneDrive\магистерская\diplom\Версия для тестирования\testing_program\testing_program\obj\Debug\testing_program.form_insert_people_in_work.resources
+D:\share\OneDrive\магистерская\diplom\Версия для тестирования\testing_program\testing_program\obj\Debug\testing_program.form_create_new_people_for_edu.resources
+D:\share\OneDrive\магистерская\diplom\Версия для тестирования\testing_program\testing_program\obj\Debug\testing_program.form_create_new_check_knowledge.resources
+D:\share\OneDrive\магистерская\diplom\Версия для тестирования\testing_program\testing_program\obj\Debug\testing_program.form_create_new_type_result_check.resources
+D:\share\OneDrive\магистерская\diplom\Версия для тестирования\testing_program\testing_program\obj\Debug\testing_program.form_insert_reference_values.resources
+D:\share\OneDrive\магистерская\diplom\Версия для тестирования\testing_program\testing_program\obj\Debug\testing_program.Form_output_of_all_incidents.resources
+D:\share\OneDrive\магистерская\diplom\Версия для тестирования\testing_program\testing_program\obj\Debug\testing_program.form_input_data.resources
+D:\share\OneDrive\магистерская\diplom\Версия для тестирования\testing_program\testing_program\obj\Debug\testing_program.Properties.Resources.resources
+D:\share\OneDrive\магистерская\diplom\Версия для тестирования\testing_program\testing_program\obj\Debug\testing_program.Form_CHOOSING_TESTS.resources
+D:\share\OneDrive\магистерская\diplom\Версия для тестирования\testing_program\testing_program\obj\Debug\testing_program.survey_form_.resources
+D:\share\OneDrive\магистерская\diplom\Версия для тестирования\testing_program\testing_program\obj\Debug\testing_program.result.resources
+D:\share\OneDrive\магистерская\diplom\Версия для тестирования\testing_program\testing_program\obj\Debug\testing_program.csproj.GenerateResource.cache
+D:\share\OneDrive\магистерская\diplom\Версия для тестирования\testing_program\testing_program\obj\Debug\testing_program.csproj.CoreCompileInputs.cache
+D:\share\OneDrive\магистерская\diplom\Версия для тестирования\testing_program\testing_program\obj\Debug\testing_program.exe
+D:\share\OneDrive\магистерская\diplom\Версия для тестирования\testing_program\testing_program\obj\Debug\testing_program.pdb
