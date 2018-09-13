@@ -31,16 +31,19 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(form_input_data));
             this.tb_LastName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.tb_Name = new System.Windows.Forms.Label();
+            this.tb_Name = new System.Windows.Forms.TextBox();
+            this.l_Name = new System.Windows.Forms.Label();
             this.tb_fatherName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.Group_box = new System.Windows.Forms.GroupBox();
+            this.label40 = new System.Windows.Forms.Label();
+            this.cb_family = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.cb_sex = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.dtp_Birthday = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cb_alkogol = new System.Windows.Forms.CheckBox();
             this.label15 = new System.Windows.Forms.Label();
             this.dtp_Time_acc_work = new System.Windows.Forms.DateTimePicker();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -51,7 +54,7 @@
             this.tb_Age_on_accident = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tb_month = new System.Windows.Forms.TextBox();
             this.cb_Type_accident = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.lb_Code_reason = new System.Windows.Forms.ListBox();
@@ -61,6 +64,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.cb_seriuosness = new System.Windows.Forms.ComboBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label44 = new System.Windows.Forms.Label();
+            this.cb_enterprice = new System.Windows.Forms.ComboBox();
+            this.cb_qualification = new System.Windows.Forms.ComboBox();
+            this.label43 = new System.Windows.Forms.Label();
+            this.cb_prof = new System.Windows.Forms.ComboBox();
+            this.label42 = new System.Windows.Forms.Label();
             this.cb_siz = new System.Windows.Forms.CheckBox();
             this.cb_learning_OT = new System.Windows.Forms.CheckBox();
             this.cb_internship = new System.Windows.Forms.CheckBox();
@@ -77,6 +86,8 @@
             this.dtp_data_enter = new System.Windows.Forms.DateTimePicker();
             this.label11 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.label41 = new System.Windows.Forms.Label();
+            this.cb_leaning = new System.Windows.Forms.ComboBox();
             this.dtp_Date_last_check = new System.Windows.Forms.DateTimePicker();
             this.label22 = new System.Windows.Forms.Label();
             this.Date_last_inst = new System.Windows.Forms.DateTimePicker();
@@ -91,52 +102,41 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.cb_yt_him = new System.Windows.Forms.ComboBox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.cb_yt_microclimat = new System.Windows.Forms.ComboBox();
-            this.cb_yt_biology = new System.Windows.Forms.ComboBox();
-            this.cb_yt_apfd = new System.Windows.Forms.ComboBox();
-            this.cb_yt_hum = new System.Windows.Forms.ComboBox();
-            this.cb_yt_iz = new System.Windows.Forms.ComboBox();
-            this.cb_yt_yz = new System.Windows.Forms.ComboBox();
-            this.cb_yt_vo = new System.Windows.Forms.ComboBox();
-            this.cb_yt_vp = new System.Windows.Forms.ComboBox();
-            this.cb_yt_nii = new System.Windows.Forms.ComboBox();
-            this.cb_yt_ii = new System.Windows.Forms.ComboBox();
-            this.cb_yt_ss = new System.Windows.Forms.ComboBox();
-            this.cb_yt_t = new System.Windows.Forms.ComboBox();
-            this.cb_yt_n = new System.Windows.Forms.ComboBox();
-            this.tb_ut = new System.Windows.Forms.TextBox();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.cb_alkogol = new System.Windows.Forms.CheckBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label40 = new System.Windows.Forms.Label();
-            this.cb_leaning = new System.Windows.Forms.ComboBox();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.cb_prof = new System.Windows.Forms.ComboBox();
-            this.label43 = new System.Windows.Forms.Label();
-            this.cb_qualification = new System.Windows.Forms.ComboBox();
-            this.cb_enterprice = new System.Windows.Forms.ComboBox();
-            this.label44 = new System.Windows.Forms.Label();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.rtb_EXTRA = new System.Windows.Forms.RichTextBox();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.tb_ut = new System.Windows.Forms.TextBox();
+            this.cb_yt_n = new System.Windows.Forms.ComboBox();
+            this.cb_yt_t = new System.Windows.Forms.ComboBox();
+            this.cb_yt_ss = new System.Windows.Forms.ComboBox();
+            this.cb_yt_ii = new System.Windows.Forms.ComboBox();
+            this.cb_yt_nii = new System.Windows.Forms.ComboBox();
+            this.cb_yt_vp = new System.Windows.Forms.ComboBox();
+            this.cb_yt_vo = new System.Windows.Forms.ComboBox();
+            this.cb_yt_yz = new System.Windows.Forms.ComboBox();
+            this.cb_yt_iz = new System.Windows.Forms.ComboBox();
+            this.cb_yt_hum = new System.Windows.Forms.ComboBox();
+            this.cb_yt_apfd = new System.Windows.Forms.ComboBox();
+            this.cb_yt_biology = new System.Windows.Forms.ComboBox();
+            this.cb_yt_microclimat = new System.Windows.Forms.ComboBox();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.cb_yt_him = new System.Windows.Forms.ComboBox();
             this.btn_exit = new System.Windows.Forms.Button();
             this.btm_create = new System.Windows.Forms.Button();
             this.Group_box.SuspendLayout();
@@ -149,9 +149,9 @@
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            this.groupBox7.SuspendLayout();
-            this.groupBox8.SuspendLayout();
             this.groupBox9.SuspendLayout();
+            this.groupBox8.SuspendLayout();
+            this.groupBox7.SuspendLayout();
             this.SuspendLayout();
             // 
             // tb_LastName
@@ -170,21 +170,21 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Фамилия";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(243, 39);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 2;
-            // 
             // tb_Name
             // 
-            this.tb_Name.AutoSize = true;
-            this.tb_Name.Location = new System.Drawing.Point(208, 42);
+            this.tb_Name.Location = new System.Drawing.Point(243, 39);
             this.tb_Name.Name = "tb_Name";
-            this.tb_Name.Size = new System.Drawing.Size(29, 13);
-            this.tb_Name.TabIndex = 1;
-            this.tb_Name.Text = "Имя";
+            this.tb_Name.Size = new System.Drawing.Size(100, 20);
+            this.tb_Name.TabIndex = 2;
+            // 
+            // l_Name
+            // 
+            this.l_Name.AutoSize = true;
+            this.l_Name.Location = new System.Drawing.Point(208, 42);
+            this.l_Name.Name = "l_Name";
+            this.l_Name.Size = new System.Drawing.Size(29, 13);
+            this.l_Name.TabIndex = 1;
+            this.l_Name.Text = "Имя";
             // 
             // tb_fatherName
             // 
@@ -205,7 +205,7 @@
             // Group_box
             // 
             this.Group_box.Controls.Add(this.label40);
-            this.Group_box.Controls.Add(this.comboBox1);
+            this.Group_box.Controls.Add(this.cb_family);
             this.Group_box.Controls.Add(this.label10);
             this.Group_box.Controls.Add(this.cb_sex);
             this.Group_box.Controls.Add(this.label8);
@@ -213,8 +213,8 @@
             this.Group_box.Controls.Add(this.tb_LastName);
             this.Group_box.Controls.Add(this.tb_fatherName);
             this.Group_box.Controls.Add(this.label1);
-            this.Group_box.Controls.Add(this.textBox1);
             this.Group_box.Controls.Add(this.tb_Name);
+            this.Group_box.Controls.Add(this.l_Name);
             this.Group_box.Controls.Add(this.label2);
             this.Group_box.Location = new System.Drawing.Point(6, 4);
             this.Group_box.Name = "Group_box";
@@ -222,6 +222,24 @@
             this.Group_box.TabIndex = 4;
             this.Group_box.TabStop = false;
             this.Group_box.Text = "Данные о человеке ";
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(208, 83);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(40, 13);
+            this.label40.TabIndex = 10;
+            this.label40.Text = "Семья";
+            // 
+            // cb_family
+            // 
+            this.cb_family.FormattingEnabled = true;
+            this.cb_family.Location = new System.Drawing.Point(254, 80);
+            this.cb_family.Name = "cb_family";
+            this.cb_family.Size = new System.Drawing.Size(121, 21);
+            this.cb_family.TabIndex = 9;
+            this.cb_family.DropDown += new System.EventHandler(this.cb_family_DropDown);
             // 
             // label10
             // 
@@ -239,6 +257,7 @@
             this.cb_sex.Name = "cb_sex";
             this.cb_sex.Size = new System.Drawing.Size(95, 21);
             this.cb_sex.TabIndex = 8;
+            this.cb_sex.DropDown += new System.EventHandler(this.cb_sex_DropDown);
             // 
             // label8
             // 
@@ -277,6 +296,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Данные об инциденте";
             // 
+            // cb_alkogol
+            // 
+            this.cb_alkogol.AutoSize = true;
+            this.cb_alkogol.Location = new System.Drawing.Point(298, 121);
+            this.cb_alkogol.Name = "cb_alkogol";
+            this.cb_alkogol.Size = new System.Drawing.Size(74, 17);
+            this.cb_alkogol.TabIndex = 13;
+            this.cb_alkogol.Text = "Алкоголь";
+            this.cb_alkogol.UseVisualStyleBackColor = true;
+            // 
             // label15
             // 
             this.label15.AutoSize = true;
@@ -302,7 +331,7 @@
             this.groupBox2.Controls.Add(this.tb_Age_on_accident);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.Controls.Add(this.tb_month);
             this.groupBox2.Location = new System.Drawing.Point(655, 19);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(237, 160);
@@ -373,14 +402,14 @@
             this.label5.TabIndex = 7;
             this.label5.Text = "Месяц";
             // 
-            // textBox2
+            // tb_month
             // 
-            this.textBox2.Location = new System.Drawing.Point(155, 25);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(60, 20);
-            this.textBox2.TabIndex = 0;
-            this.textBox2.TabStop = false;
+            this.tb_month.Location = new System.Drawing.Point(155, 25);
+            this.tb_month.Name = "tb_month";
+            this.tb_month.ReadOnly = true;
+            this.tb_month.Size = new System.Drawing.Size(60, 20);
+            this.tb_month.TabIndex = 0;
+            this.tb_month.TabStop = false;
             // 
             // cb_Type_accident
             // 
@@ -389,6 +418,7 @@
             this.cb_Type_accident.Name = "cb_Type_accident";
             this.cb_Type_accident.Size = new System.Drawing.Size(121, 21);
             this.cb_Type_accident.TabIndex = 6;
+            this.cb_Type_accident.DropDown += new System.EventHandler(this.cb_Type_accident_DropDown);
             // 
             // label7
             // 
@@ -447,6 +477,7 @@
             this.cb_seriuosness.Name = "cb_seriuosness";
             this.cb_seriuosness.Size = new System.Drawing.Size(121, 21);
             this.cb_seriuosness.TabIndex = 4;
+            this.cb_seriuosness.DropDown += new System.EventHandler(this.cb_seriuosness_DropDown);
             // 
             // groupBox3
             // 
@@ -467,10 +498,64 @@
             this.groupBox3.Controls.Add(this.label11);
             this.groupBox3.Location = new System.Drawing.Point(6, 336);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(932, 149);
+            this.groupBox3.Size = new System.Drawing.Size(932, 165);
             this.groupBox3.TabIndex = 6;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Данные о работе";
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(375, 90);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(74, 13);
+            this.label44.TabIndex = 22;
+            this.label44.Text = "Предприятие";
+            // 
+            // cb_enterprice
+            // 
+            this.cb_enterprice.FormattingEnabled = true;
+            this.cb_enterprice.Location = new System.Drawing.Point(467, 87);
+            this.cb_enterprice.Name = "cb_enterprice";
+            this.cb_enterprice.Size = new System.Drawing.Size(121, 21);
+            this.cb_enterprice.TabIndex = 21;
+            this.cb_enterprice.DropDown += new System.EventHandler(this.cb_enterprice_DropDown);
+            // 
+            // cb_qualification
+            // 
+            this.cb_qualification.FormattingEnabled = true;
+            this.cb_qualification.Location = new System.Drawing.Point(152, 92);
+            this.cb_qualification.Name = "cb_qualification";
+            this.cb_qualification.Size = new System.Drawing.Size(121, 21);
+            this.cb_qualification.TabIndex = 20;
+            this.cb_qualification.DropDown += new System.EventHandler(this.cb_qualification_DropDown);
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(14, 95);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(82, 13);
+            this.label43.TabIndex = 19;
+            this.label43.Text = "Квалификация";
+            // 
+            // cb_prof
+            // 
+            this.cb_prof.FormattingEnabled = true;
+            this.cb_prof.Location = new System.Drawing.Point(467, 55);
+            this.cb_prof.Name = "cb_prof";
+            this.cb_prof.Size = new System.Drawing.Size(121, 21);
+            this.cb_prof.TabIndex = 18;
+            this.cb_prof.DropDown += new System.EventHandler(this.cb_prof_DropDown);
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Location = new System.Drawing.Point(375, 61);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(65, 13);
+            this.label42.TabIndex = 17;
+            this.label42.Text = "Профессия";
             // 
             // cb_siz
             // 
@@ -516,6 +601,7 @@
             this.cb_Shedule.Name = "cb_Shedule";
             this.cb_Shedule.Size = new System.Drawing.Size(163, 21);
             this.cb_Shedule.TabIndex = 11;
+            this.cb_Shedule.DropDown += new System.EventHandler(this.cb_Shedule_DropDown);
             // 
             // label17
             // 
@@ -628,6 +714,24 @@
             this.groupBox5.TabIndex = 7;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Данные об обучении и проверке знаний";
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(350, 77);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(75, 13);
+            this.label41.TabIndex = 15;
+            this.label41.Text = "Образование";
+            // 
+            // cb_leaning
+            // 
+            this.cb_leaning.FormattingEnabled = true;
+            this.cb_leaning.Location = new System.Drawing.Point(496, 74);
+            this.cb_leaning.Name = "cb_leaning";
+            this.cb_leaning.Size = new System.Drawing.Size(121, 21);
+            this.cb_leaning.TabIndex = 14;
+            this.cb_leaning.DropDown += new System.EventHandler(this.cb_leaning_DropDown);
             // 
             // dtp_Date_last_check
             // 
@@ -749,7 +853,6 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "О человеке";
             this.tabPage1.UseVisualStyleBackColor = true;
-            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // tabPage2
             // 
@@ -763,6 +866,42 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Рабочее место";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // groupBox9
+            // 
+            this.groupBox9.Controls.Add(this.rtb_EXTRA);
+            this.groupBox9.Location = new System.Drawing.Point(7, 365);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Size = new System.Drawing.Size(980, 255);
+            this.groupBox9.TabIndex = 2;
+            this.groupBox9.TabStop = false;
+            this.groupBox9.Text = "Дополнительная информация";
+            // 
+            // rtb_EXTRA
+            // 
+            this.rtb_EXTRA.Location = new System.Drawing.Point(6, 19);
+            this.rtb_EXTRA.Name = "rtb_EXTRA";
+            this.rtb_EXTRA.Size = new System.Drawing.Size(968, 236);
+            this.rtb_EXTRA.TabIndex = 0;
+            this.rtb_EXTRA.Text = "";
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.Controls.Add(this.checkedListBox1);
+            this.groupBox8.Location = new System.Drawing.Point(7, 177);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(980, 181);
+            this.groupBox8.TabIndex = 1;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "ОВПФ";
+            // 
+            // checkedListBox1
+            // 
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Location = new System.Drawing.Point(22, 35);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(376, 94);
+            this.checkedListBox1.TabIndex = 0;
             // 
             // groupBox7
             // 
@@ -803,149 +942,118 @@
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Условия труда";
             // 
-            // groupBox8
+            // tb_ut
             // 
-            this.groupBox8.Controls.Add(this.checkedListBox1);
-            this.groupBox8.Location = new System.Drawing.Point(7, 177);
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(980, 181);
-            this.groupBox8.TabIndex = 1;
-            this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "ОВПФ";
+            this.tb_ut.Location = new System.Drawing.Point(704, 86);
+            this.tb_ut.Name = "tb_ut";
+            this.tb_ut.ReadOnly = true;
+            this.tb_ut.Size = new System.Drawing.Size(121, 20);
+            this.tb_ut.TabIndex = 0;
+            this.tb_ut.TabStop = false;
             // 
-            // cb_yt_him
+            // cb_yt_n
             // 
-            this.cb_yt_him.FormattingEnabled = true;
-            this.cb_yt_him.Location = new System.Drawing.Point(109, 19);
-            this.cb_yt_him.Name = "cb_yt_him";
-            this.cb_yt_him.Size = new System.Drawing.Size(121, 21);
-            this.cb_yt_him.TabIndex = 0;
+            this.cb_yt_n.FormattingEnabled = true;
+            this.cb_yt_n.Location = new System.Drawing.Point(704, 56);
+            this.cb_yt_n.Name = "cb_yt_n";
+            this.cb_yt_n.Size = new System.Drawing.Size(121, 21);
+            this.cb_yt_n.TabIndex = 28;
             // 
-            // label25
+            // cb_yt_t
             // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(19, 22);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(28, 13);
-            this.label25.TabIndex = 1;
-            this.label25.Text = "Хим";
+            this.cb_yt_t.FormattingEnabled = true;
+            this.cb_yt_t.Location = new System.Drawing.Point(704, 19);
+            this.cb_yt_t.Name = "cb_yt_t";
+            this.cb_yt_t.Size = new System.Drawing.Size(121, 21);
+            this.cb_yt_t.TabIndex = 27;
             // 
-            // label26
+            // cb_yt_ss
             // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(19, 59);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(77, 13);
-            this.label26.TabIndex = 2;
-            this.label26.Text = "Микроклимат";
+            this.cb_yt_ss.FormattingEnabled = true;
+            this.cb_yt_ss.Location = new System.Drawing.Point(526, 117);
+            this.cb_yt_ss.Name = "cb_yt_ss";
+            this.cb_yt_ss.Size = new System.Drawing.Size(121, 21);
+            this.cb_yt_ss.TabIndex = 26;
             // 
-            // label27
+            // cb_yt_ii
             // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(19, 90);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(55, 13);
-            this.label27.TabIndex = 3;
-            this.label27.Text = "Биология";
+            this.cb_yt_ii.FormattingEnabled = true;
+            this.cb_yt_ii.Location = new System.Drawing.Point(526, 86);
+            this.cb_yt_ii.Name = "cb_yt_ii";
+            this.cb_yt_ii.Size = new System.Drawing.Size(121, 21);
+            this.cb_yt_ii.TabIndex = 25;
             // 
-            // label28
+            // cb_yt_nii
             // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(19, 119);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(42, 13);
-            this.label28.TabIndex = 4;
-            this.label28.Text = "АПФД";
+            this.cb_yt_nii.FormattingEnabled = true;
+            this.cb_yt_nii.Location = new System.Drawing.Point(526, 56);
+            this.cb_yt_nii.Name = "cb_yt_nii";
+            this.cb_yt_nii.Size = new System.Drawing.Size(121, 21);
+            this.cb_yt_nii.TabIndex = 24;
             // 
-            // label29
+            // cb_yt_vp
             // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(263, 22);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(33, 13);
-            this.label29.TabIndex = 5;
-            this.label29.Text = "ШУМ";
+            this.cb_yt_vp.FormattingEnabled = true;
+            this.cb_yt_vp.Location = new System.Drawing.Point(526, 19);
+            this.cb_yt_vp.Name = "cb_yt_vp";
+            this.cb_yt_vp.Size = new System.Drawing.Size(121, 21);
+            this.cb_yt_vp.TabIndex = 23;
             // 
-            // label30
+            // cb_yt_vo
             // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(263, 59);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(22, 13);
-            this.label30.TabIndex = 6;
-            this.label30.Text = "ИЗ";
+            this.cb_yt_vo.FormattingEnabled = true;
+            this.cb_yt_vo.Location = new System.Drawing.Point(306, 116);
+            this.cb_yt_vo.Name = "cb_yt_vo";
+            this.cb_yt_vo.Size = new System.Drawing.Size(121, 21);
+            this.cb_yt_vo.TabIndex = 22;
             // 
-            // label31
+            // cb_yt_yz
             // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(263, 90);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(22, 13);
-            this.label31.TabIndex = 7;
-            this.label31.Text = "УЗ";
+            this.cb_yt_yz.FormattingEnabled = true;
+            this.cb_yt_yz.Location = new System.Drawing.Point(306, 87);
+            this.cb_yt_yz.Name = "cb_yt_yz";
+            this.cb_yt_yz.Size = new System.Drawing.Size(121, 21);
+            this.cb_yt_yz.TabIndex = 21;
             // 
-            // label32
+            // cb_yt_iz
             // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(263, 119);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(22, 13);
-            this.label32.TabIndex = 8;
-            this.label32.Text = "ВО";
+            this.cb_yt_iz.FormattingEnabled = true;
+            this.cb_yt_iz.Location = new System.Drawing.Point(306, 56);
+            this.cb_yt_iz.Name = "cb_yt_iz";
+            this.cb_yt_iz.Size = new System.Drawing.Size(121, 21);
+            this.cb_yt_iz.TabIndex = 20;
             // 
-            // label33
+            // cb_yt_hum
             // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(477, 22);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(22, 13);
-            this.label33.TabIndex = 9;
-            this.label33.Text = "ВЛ";
+            this.cb_yt_hum.FormattingEnabled = true;
+            this.cb_yt_hum.Location = new System.Drawing.Point(306, 19);
+            this.cb_yt_hum.Name = "cb_yt_hum";
+            this.cb_yt_hum.Size = new System.Drawing.Size(121, 21);
+            this.cb_yt_hum.TabIndex = 19;
             // 
-            // label34
+            // cb_yt_apfd
             // 
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(477, 59);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(29, 13);
-            this.label34.TabIndex = 10;
-            this.label34.Text = "НиИ";
+            this.cb_yt_apfd.FormattingEnabled = true;
+            this.cb_yt_apfd.Location = new System.Drawing.Point(109, 117);
+            this.cb_yt_apfd.Name = "cb_yt_apfd";
+            this.cb_yt_apfd.Size = new System.Drawing.Size(121, 21);
+            this.cb_yt_apfd.TabIndex = 18;
             // 
-            // label35
+            // cb_yt_biology
             // 
-            this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(477, 90);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(23, 13);
-            this.label35.TabIndex = 11;
-            this.label35.Text = "ИИ";
+            this.cb_yt_biology.FormattingEnabled = true;
+            this.cb_yt_biology.Location = new System.Drawing.Point(109, 87);
+            this.cb_yt_biology.Name = "cb_yt_biology";
+            this.cb_yt_biology.Size = new System.Drawing.Size(121, 21);
+            this.cb_yt_biology.TabIndex = 17;
             // 
-            // label36
+            // cb_yt_microclimat
             // 
-            this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(477, 120);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(21, 13);
-            this.label36.TabIndex = 12;
-            this.label36.Text = "СС";
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(675, 22);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(14, 13);
-            this.label37.TabIndex = 13;
-            this.label37.Text = "Т";
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(675, 59);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(15, 13);
-            this.label38.TabIndex = 14;
-            this.label38.Text = "Н";
+            this.cb_yt_microclimat.FormattingEnabled = true;
+            this.cb_yt_microclimat.Location = new System.Drawing.Point(109, 56);
+            this.cb_yt_microclimat.Name = "cb_yt_microclimat";
+            this.cb_yt_microclimat.Size = new System.Drawing.Size(121, 21);
+            this.cb_yt_microclimat.TabIndex = 16;
             // 
             // label39
             // 
@@ -956,243 +1064,143 @@
             this.label39.TabIndex = 15;
             this.label39.Text = "УТ";
             // 
-            // cb_yt_microclimat
+            // label38
             // 
-            this.cb_yt_microclimat.FormattingEnabled = true;
-            this.cb_yt_microclimat.Location = new System.Drawing.Point(109, 56);
-            this.cb_yt_microclimat.Name = "cb_yt_microclimat";
-            this.cb_yt_microclimat.Size = new System.Drawing.Size(121, 21);
-            this.cb_yt_microclimat.TabIndex = 16;
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(675, 59);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(15, 13);
+            this.label38.TabIndex = 14;
+            this.label38.Text = "Н";
             // 
-            // cb_yt_biology
+            // label37
             // 
-            this.cb_yt_biology.FormattingEnabled = true;
-            this.cb_yt_biology.Location = new System.Drawing.Point(109, 87);
-            this.cb_yt_biology.Name = "cb_yt_biology";
-            this.cb_yt_biology.Size = new System.Drawing.Size(121, 21);
-            this.cb_yt_biology.TabIndex = 17;
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(675, 22);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(14, 13);
+            this.label37.TabIndex = 13;
+            this.label37.Text = "Т";
             // 
-            // cb_yt_apfd
+            // label36
             // 
-            this.cb_yt_apfd.FormattingEnabled = true;
-            this.cb_yt_apfd.Location = new System.Drawing.Point(109, 117);
-            this.cb_yt_apfd.Name = "cb_yt_apfd";
-            this.cb_yt_apfd.Size = new System.Drawing.Size(121, 21);
-            this.cb_yt_apfd.TabIndex = 18;
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(477, 120);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(21, 13);
+            this.label36.TabIndex = 12;
+            this.label36.Text = "СС";
             // 
-            // cb_yt_hum
+            // label35
             // 
-            this.cb_yt_hum.FormattingEnabled = true;
-            this.cb_yt_hum.Location = new System.Drawing.Point(306, 19);
-            this.cb_yt_hum.Name = "cb_yt_hum";
-            this.cb_yt_hum.Size = new System.Drawing.Size(121, 21);
-            this.cb_yt_hum.TabIndex = 19;
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(477, 90);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(23, 13);
+            this.label35.TabIndex = 11;
+            this.label35.Text = "ИИ";
             // 
-            // cb_yt_iz
+            // label34
             // 
-            this.cb_yt_iz.FormattingEnabled = true;
-            this.cb_yt_iz.Location = new System.Drawing.Point(306, 56);
-            this.cb_yt_iz.Name = "cb_yt_iz";
-            this.cb_yt_iz.Size = new System.Drawing.Size(121, 21);
-            this.cb_yt_iz.TabIndex = 20;
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(477, 59);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(29, 13);
+            this.label34.TabIndex = 10;
+            this.label34.Text = "НиИ";
             // 
-            // cb_yt_yz
+            // label33
             // 
-            this.cb_yt_yz.FormattingEnabled = true;
-            this.cb_yt_yz.Location = new System.Drawing.Point(306, 87);
-            this.cb_yt_yz.Name = "cb_yt_yz";
-            this.cb_yt_yz.Size = new System.Drawing.Size(121, 21);
-            this.cb_yt_yz.TabIndex = 21;
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(477, 22);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(22, 13);
+            this.label33.TabIndex = 9;
+            this.label33.Text = "ВЛ";
             // 
-            // cb_yt_vo
+            // label32
             // 
-            this.cb_yt_vo.FormattingEnabled = true;
-            this.cb_yt_vo.Location = new System.Drawing.Point(306, 116);
-            this.cb_yt_vo.Name = "cb_yt_vo";
-            this.cb_yt_vo.Size = new System.Drawing.Size(121, 21);
-            this.cb_yt_vo.TabIndex = 22;
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(263, 119);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(22, 13);
+            this.label32.TabIndex = 8;
+            this.label32.Text = "ВО";
             // 
-            // cb_yt_vp
+            // label31
             // 
-            this.cb_yt_vp.FormattingEnabled = true;
-            this.cb_yt_vp.Location = new System.Drawing.Point(526, 19);
-            this.cb_yt_vp.Name = "cb_yt_vp";
-            this.cb_yt_vp.Size = new System.Drawing.Size(121, 21);
-            this.cb_yt_vp.TabIndex = 23;
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(263, 90);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(22, 13);
+            this.label31.TabIndex = 7;
+            this.label31.Text = "УЗ";
             // 
-            // cb_yt_nii
+            // label30
             // 
-            this.cb_yt_nii.FormattingEnabled = true;
-            this.cb_yt_nii.Location = new System.Drawing.Point(526, 56);
-            this.cb_yt_nii.Name = "cb_yt_nii";
-            this.cb_yt_nii.Size = new System.Drawing.Size(121, 21);
-            this.cb_yt_nii.TabIndex = 24;
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(263, 59);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(22, 13);
+            this.label30.TabIndex = 6;
+            this.label30.Text = "ИЗ";
             // 
-            // cb_yt_ii
+            // label29
             // 
-            this.cb_yt_ii.FormattingEnabled = true;
-            this.cb_yt_ii.Location = new System.Drawing.Point(526, 86);
-            this.cb_yt_ii.Name = "cb_yt_ii";
-            this.cb_yt_ii.Size = new System.Drawing.Size(121, 21);
-            this.cb_yt_ii.TabIndex = 25;
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(263, 22);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(33, 13);
+            this.label29.TabIndex = 5;
+            this.label29.Text = "ШУМ";
             // 
-            // cb_yt_ss
+            // label28
             // 
-            this.cb_yt_ss.FormattingEnabled = true;
-            this.cb_yt_ss.Location = new System.Drawing.Point(526, 117);
-            this.cb_yt_ss.Name = "cb_yt_ss";
-            this.cb_yt_ss.Size = new System.Drawing.Size(121, 21);
-            this.cb_yt_ss.TabIndex = 26;
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(19, 119);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(42, 13);
+            this.label28.TabIndex = 4;
+            this.label28.Text = "АПФД";
             // 
-            // cb_yt_t
+            // label27
             // 
-            this.cb_yt_t.FormattingEnabled = true;
-            this.cb_yt_t.Location = new System.Drawing.Point(704, 19);
-            this.cb_yt_t.Name = "cb_yt_t";
-            this.cb_yt_t.Size = new System.Drawing.Size(121, 21);
-            this.cb_yt_t.TabIndex = 27;
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(19, 90);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(55, 13);
+            this.label27.TabIndex = 3;
+            this.label27.Text = "Биология";
             // 
-            // cb_yt_n
+            // label26
             // 
-            this.cb_yt_n.FormattingEnabled = true;
-            this.cb_yt_n.Location = new System.Drawing.Point(704, 56);
-            this.cb_yt_n.Name = "cb_yt_n";
-            this.cb_yt_n.Size = new System.Drawing.Size(121, 21);
-            this.cb_yt_n.TabIndex = 28;
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(19, 59);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(77, 13);
+            this.label26.TabIndex = 2;
+            this.label26.Text = "Микроклимат";
             // 
-            // tb_ut
+            // label25
             // 
-            this.tb_ut.Location = new System.Drawing.Point(704, 86);
-            this.tb_ut.Name = "tb_ut";
-            this.tb_ut.ReadOnly = true;
-            this.tb_ut.Size = new System.Drawing.Size(121, 20);
-            this.tb_ut.TabIndex = 0;
-            this.tb_ut.TabStop = false;
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(19, 22);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(28, 13);
+            this.label25.TabIndex = 1;
+            this.label25.Text = "Хим";
             // 
-            // checkedListBox1
+            // cb_yt_him
             // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(22, 35);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(376, 94);
-            this.checkedListBox1.TabIndex = 0;
-            // 
-            // cb_alkogol
-            // 
-            this.cb_alkogol.AutoSize = true;
-            this.cb_alkogol.Location = new System.Drawing.Point(298, 121);
-            this.cb_alkogol.Name = "cb_alkogol";
-            this.cb_alkogol.Size = new System.Drawing.Size(74, 17);
-            this.cb_alkogol.TabIndex = 13;
-            this.cb_alkogol.Text = "Алкоголь";
-            this.cb_alkogol.UseVisualStyleBackColor = true;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(254, 80);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 9;
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(208, 83);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(40, 13);
-            this.label40.TabIndex = 10;
-            this.label40.Text = "Семья";
-            // 
-            // cb_leaning
-            // 
-            this.cb_leaning.FormattingEnabled = true;
-            this.cb_leaning.Location = new System.Drawing.Point(496, 74);
-            this.cb_leaning.Name = "cb_leaning";
-            this.cb_leaning.Size = new System.Drawing.Size(121, 21);
-            this.cb_leaning.TabIndex = 14;
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(350, 77);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(75, 13);
-            this.label41.TabIndex = 15;
-            this.label41.Text = "Образование";
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.Location = new System.Drawing.Point(375, 61);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(65, 13);
-            this.label42.TabIndex = 17;
-            this.label42.Text = "Профессия";
-            // 
-            // cb_prof
-            // 
-            this.cb_prof.FormattingEnabled = true;
-            this.cb_prof.Location = new System.Drawing.Point(467, 55);
-            this.cb_prof.Name = "cb_prof";
-            this.cb_prof.Size = new System.Drawing.Size(121, 21);
-            this.cb_prof.TabIndex = 18;
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(14, 95);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(82, 13);
-            this.label43.TabIndex = 19;
-            this.label43.Text = "Квалификация";
-            // 
-            // cb_qualification
-            // 
-            this.cb_qualification.FormattingEnabled = true;
-            this.cb_qualification.Location = new System.Drawing.Point(152, 92);
-            this.cb_qualification.Name = "cb_qualification";
-            this.cb_qualification.Size = new System.Drawing.Size(121, 21);
-            this.cb_qualification.TabIndex = 20;
-            // 
-            // cb_enterprice
-            // 
-            this.cb_enterprice.FormattingEnabled = true;
-            this.cb_enterprice.Location = new System.Drawing.Point(467, 87);
-            this.cb_enterprice.Name = "cb_enterprice";
-            this.cb_enterprice.Size = new System.Drawing.Size(121, 21);
-            this.cb_enterprice.TabIndex = 21;
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(375, 90);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(74, 13);
-            this.label44.TabIndex = 22;
-            this.label44.Text = "Предприятие";
-            // 
-            // groupBox9
-            // 
-            this.groupBox9.Controls.Add(this.rtb_EXTRA);
-            this.groupBox9.Location = new System.Drawing.Point(7, 365);
-            this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(980, 255);
-            this.groupBox9.TabIndex = 2;
-            this.groupBox9.TabStop = false;
-            this.groupBox9.Text = "Дополнительная информация";
-            // 
-            // rtb_EXTRA
-            // 
-            this.rtb_EXTRA.Location = new System.Drawing.Point(6, 19);
-            this.rtb_EXTRA.Name = "rtb_EXTRA";
-            this.rtb_EXTRA.Size = new System.Drawing.Size(968, 236);
-            this.rtb_EXTRA.TabIndex = 0;
-            this.rtb_EXTRA.Text = "";
+            this.cb_yt_him.FormattingEnabled = true;
+            this.cb_yt_him.Location = new System.Drawing.Point(109, 19);
+            this.cb_yt_him.Name = "cb_yt_him";
+            this.cb_yt_him.Size = new System.Drawing.Size(121, 21);
+            this.cb_yt_him.TabIndex = 0;
             // 
             // btn_exit
             // 
-            this.btn_exit.Location = new System.Drawing.Point(883, 714);
+            this.btn_exit.Location = new System.Drawing.Point(868, 689);
             this.btn_exit.Name = "btn_exit";
             this.btn_exit.Size = new System.Drawing.Size(75, 23);
             this.btn_exit.TabIndex = 9;
@@ -1201,12 +1209,13 @@
             // 
             // btm_create
             // 
-            this.btm_create.Location = new System.Drawing.Point(762, 714);
+            this.btm_create.Location = new System.Drawing.Point(742, 689);
             this.btm_create.Name = "btm_create";
             this.btm_create.Size = new System.Drawing.Size(75, 23);
             this.btm_create.TabIndex = 10;
             this.btm_create.Text = "Сохранить";
             this.btm_create.UseVisualStyleBackColor = true;
+            this.btm_create.Click += new System.EventHandler(this.btm_create_Click);
             // 
             // form_input_data
             // 
@@ -1236,10 +1245,10 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
+            this.groupBox9.ResumeLayout(false);
+            this.groupBox8.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
-            this.groupBox8.ResumeLayout(false);
-            this.groupBox9.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1248,15 +1257,15 @@
 
         private System.Windows.Forms.TextBox tb_LastName;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label tb_Name;
+        private System.Windows.Forms.TextBox tb_Name;
+        private System.Windows.Forms.Label l_Name;
         private System.Windows.Forms.TextBox tb_fatherName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox Group_box;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cb_seriuosness;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tb_month;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DateTimePicker dtp_date_acc;
@@ -1341,7 +1350,7 @@
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.ComboBox cb_yt_him;
         private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cb_family;
         private System.Windows.Forms.CheckBox cb_alkogol;
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.ComboBox cb_enterprice;

@@ -37,11 +37,12 @@
             this.tb_Serial_Number = new System.Windows.Forms.TextBox();
             this.tb_Password = new System.Windows.Forms.TextBox();
             this.Btn_admin = new System.Windows.Forms.Button();
+            this.btn_insert_data = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Btn_login
             // 
-            this.Btn_login.Location = new System.Drawing.Point(94, 169);
+            this.Btn_login.Location = new System.Drawing.Point(41, 169);
             this.Btn_login.Name = "Btn_login";
             this.Btn_login.Size = new System.Drawing.Size(75, 23);
             this.Btn_login.TabIndex = 1;
@@ -51,7 +52,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(408, 169);
+            this.button2.Location = new System.Drawing.Point(361, 169);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 2;
@@ -106,7 +107,7 @@
             // 
             // Btn_admin
             // 
-            this.Btn_admin.Location = new System.Drawing.Point(221, 169);
+            this.Btn_admin.Location = new System.Drawing.Point(173, 169);
             this.Btn_admin.Name = "Btn_admin";
             this.Btn_admin.Size = new System.Drawing.Size(162, 23);
             this.Btn_admin.TabIndex = 8;
@@ -114,11 +115,22 @@
             this.Btn_admin.UseVisualStyleBackColor = true;
             this.Btn_admin.Click += new System.EventHandler(this.Btn_admin_Click);
             // 
+            // btn_insert_data
+            // 
+            this.btn_insert_data.Location = new System.Drawing.Point(474, 169);
+            this.btn_insert_data.Name = "btn_insert_data";
+            this.btn_insert_data.Size = new System.Drawing.Size(99, 23);
+            this.btn_insert_data.TabIndex = 9;
+            this.btn_insert_data.Text = "Ввод данных";
+            this.btn_insert_data.UseVisualStyleBackColor = true;
+            this.btn_insert_data.Click += new System.EventHandler(this.btn_insert_data_Click);
+            // 
             // Form_Authorization
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(616, 249);
+            this.Controls.Add(this.btn_insert_data);
             this.Controls.Add(this.Btn_admin);
             this.Controls.Add(this.tb_Password);
             this.Controls.Add(this.tb_Serial_Number);
@@ -145,6 +157,7 @@
         private System.Windows.Forms.TextBox tb_Serial_Number;
         private System.Windows.Forms.TextBox tb_Password;
         private System.Windows.Forms.Button Btn_admin;
+        private System.Windows.Forms.Button btn_insert_data;
     }
 }
 

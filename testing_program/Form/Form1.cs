@@ -90,5 +90,12 @@ namespace testing_program
                 MessageBox.Show("У вас нет прав на вход в режиме администратора");
             }
         }
+
+        private void btn_insert_data_Click(object sender, EventArgs e)
+        {
+            form_input_data form_Input_Data = new form_input_data();
+            form_Input_Data.ShowDialog();
+            this.Close();
+        }
     }
 }

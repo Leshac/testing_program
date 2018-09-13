@@ -138,10 +138,12 @@ namespace testing_program
 
         private void btn_create_Click(object sender, EventArgs e)
         {
+
             string create_new_accident = "INSERT INTO acc (id_human, id_type, id_seriousness, Datetime, [Time_acc_work(in hours)], Dayweek, Age_on_accident, Alcohol,SIZ, month) VALUES ('" + cb_people_for_edu.SelectedValue + "','"+cb_type_accident.SelectedValue+"',N'" +cb_seriousness.SelectedValue + "',N'" + dt_Datetime_accident.Value.Date + "',N'" + tb_Time_acc_work.Text + "',N'" + tb_dayweek.Text+ "',N'" + tb_Age_on_accident.Text+ "',N'" + cb_Alcohol.Checked+ "',N'" + cb_SIZ.Checked+ "',N'" + tb_month.Text+ "')";
             Create_SQL_Command create_SQL_Command1 = new Create_SQL_Command(create_new_accident);
             SqlCommand Command1 = create_SQL_Command1.get_SQL_Command();
             Command1.ExecuteNonQuery();
+           
             this.Close();
         }
 
@@ -216,5 +218,12 @@ namespace testing_program
             tb_month.Text = Convert.ToString(month);
 
         }
+
+       
     }
+
+    
+
+
+
 }
