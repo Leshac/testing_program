@@ -40,8 +40,7 @@ namespace testing_program
             DataTable dataTable = new DataTable();
             SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sql_quiry, sqlConnection);
             sqlDataAdapter.Fill(dataTable);
-
-
+            
             target.DataSource = dataTable;
             target.DisplayMember = "Name";// столбец для отображения
             target.ValueMember = "id";//столбец с id
@@ -196,6 +195,65 @@ namespace testing_program
             sqlConnection.Open();
 
             string sql_quiry = $"SELECT  Name,id FROM Shedule";
+
+            DataTable dataTable = new DataTable();
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sql_quiry, sqlConnection);
+            sqlDataAdapter.Fill(dataTable);
+            
+            target.DataSource = dataTable;
+            target.DisplayMember = "Name";// столбец для отображения
+            target.ValueMember = "id";//столбец с id
+            target.SelectedIndex = -1;
+
+            sqlConnection.Close();
+        }
+
+        public static void Drop_down_code_reason(ListBox target)
+        {
+            SqlConnection sqlConnection = new SqlConnection(ConectionSQL_string.sql_string);
+            sqlConnection.Open();
+
+            string sql_quiry = $"SELECT  id, Name=CONCAT(N_code,[Name]) FROM Code_reason";
+
+            DataTable dataTable = new DataTable();
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sql_quiry, sqlConnection);
+            sqlDataAdapter.Fill(dataTable);
+
+
+            target.DataSource = dataTable;
+            target.DisplayMember = "Name";// столбец для отображения
+            target.ValueMember = "id";//столбец с id
+            target.SelectedIndex = -1;
+
+            sqlConnection.Close();
+        }
+
+        public static void Drop_down_ut(ComboBox target)
+        {
+            SqlConnection sqlConnection = new SqlConnection(ConectionSQL_string.sql_string);
+            sqlConnection.Open();
+
+            string sql_quiry = $"SELECT id, Name=Code_ut FROM UT";
+
+            DataTable dataTable = new DataTable();
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sql_quiry, sqlConnection);
+            sqlDataAdapter.Fill(dataTable);
+
+
+            target.DataSource = dataTable;
+            target.DisplayMember = "Name";// столбец для отображения
+            target.ValueMember = "id";//столбец с id
+            target.SelectedIndex = -1;
+
+            sqlConnection.Close();
+        }
+
+        public static void Drop_down_OVPF(ListBox target)
+        {
+            SqlConnection sqlConnection = new SqlConnection(ConectionSQL_string.sql_string);
+            sqlConnection.Open();
+
+            string sql_quiry = $"SELECT  id, Name FROM OVPF";
 
             DataTable dataTable = new DataTable();
             SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sql_quiry, sqlConnection);

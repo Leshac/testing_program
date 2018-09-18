@@ -70,6 +70,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Logic\calculation_ut.cs" />
     <Compile Include="cb_Drop_down.cs" />
     <Compile Include="ConectionSQL_string.cs" />
     <Compile Include="Form\admin\Admin_panel.cs">
@@ -270,11 +271,14 @@
     <Compile Include="Form\form_input_data.Designer.cs">
       <DependentUpon>form_input_data.cs</DependentUpon>
     </Compile>
-    <Compile Include="insert_data_in_DB.cs" />
+    <Compile Include="Logic\difference_data.cs" />
+    <Compile Include="Logic\get_time_start.cs" />
+    <Compile Include="Logic\insert_data_in_DB.cs" />
     <Compile Include="Interface\Create_interface_form_question.cs" />
     <Compile Include="Interface\create_label.cs" />
     <Compile Include="Interface\Create_Radio_Button.cs" />
     <Compile Include="line_break.cs" />
+    <Compile Include="Logic\sum_ experience.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Form\result.cs">

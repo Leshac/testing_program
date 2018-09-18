@@ -14,7 +14,7 @@ namespace testing_program
     public partial class Form_output_of_all_incidents : Form
     {
         private DataGridView dgv_all_accident = new DataGridView();
-        const int ColumnCount=27;
+        const int ColumnCount=36;
         public Form_output_of_all_incidents()
         {
             InitializeComponent();
@@ -37,7 +37,7 @@ namespace testing_program
             //dgv_all_accident.AutoSize = true;
             // dgv_all_accident.ScrollBars = Both;
 
-
+            
             dgv_all_accident.Columns[0].Name = "ФИО";
             dgv_all_accident.Columns[1].Name = "Тяжесть последствий";
             dgv_all_accident.Columns[2].Name = "Дата происшествия";
@@ -48,23 +48,32 @@ namespace testing_program
             dgv_all_accident.Columns[7].Name = "Возраст на момент НС";
             dgv_all_accident.Columns[8].Name = "Пол";
             dgv_all_accident.Columns[9].Name = "Дата начала труд. Деят.";
-            dgv_all_accident.Columns[10].Name = "Время от начала смены";
-            dgv_all_accident.Columns[11].Name = "День недели НС";
-            dgv_all_accident.Columns[12].Name = "Дата повторного (последнего) инструктажа";
-            dgv_all_accident.Columns[13].Name = "Время после инстр-жа";
-            dgv_all_accident.Columns[14].Name = "Дата проверки знаний";
-            dgv_all_accident.Columns[15].Name = "Время после проверки знаний";
-            dgv_all_accident.Columns[16].Name = "Стажировка";
-            dgv_all_accident.Columns[17].Name = "СИЗ";
-            dgv_all_accident.Columns[18].Name = "УТ";
-            dgv_all_accident.Columns[19].Name = "ОВПФ";
-            dgv_all_accident.Columns[20].Name = "Алкоголь";
-            dgv_all_accident.Columns[21].Name = "Семья";
-            dgv_all_accident.Columns[22].Name = "Образование";
-            dgv_all_accident.Columns[23].Name = "Профессия";
-            dgv_all_accident.Columns[24].Name = "Квалификация";
-            dgv_all_accident.Columns[25].Name = "Предприятие";
-            dgv_all_accident.Columns[26].Name = "ОКВЭД/отрасль";
+            dgv_all_accident.Columns[10].Name = "Стаж работы общ";
+            dgv_all_accident.Columns[11].Name = "Стаж работы по профессии при вып которой произошел НС";
+            dgv_all_accident.Columns[12].Name = "Стаж работы в организации";
+            dgv_all_accident.Columns[13].Name = "Время суток";
+            dgv_all_accident.Columns[14].Name = "Время от начала смены";
+            dgv_all_accident.Columns[15].Name = "График работы";
+            dgv_all_accident.Columns[16].Name = "День недели НС";
+            dgv_all_accident.Columns[17].Name = "Дата вводного инструктажа ";
+            dgv_all_accident.Columns[18].Name = "Дата повторного (последнего) инструктажа";
+            dgv_all_accident.Columns[19].Name = "Время после инстр-жа";
+            dgv_all_accident.Columns[20].Name = "Дата проверки знаний";
+            dgv_all_accident.Columns[21].Name = "Время после проверки знаний";
+            dgv_all_accident.Columns[22].Name = "Стажировка";
+            dgv_all_accident.Columns[23].Name = "Обучение по ОТ";
+            dgv_all_accident.Columns[24].Name = "СредстаИндивидуальной Защиты";
+            dgv_all_accident.Columns[25].Name = "Условия Труда";
+            dgv_all_accident.Columns[26].Name = "СОУТ/АРМ (Дата)";
+            dgv_all_accident.Columns[27].Name = "Опасные и вредные Производственные Факторы";
+            dgv_all_accident.Columns[28].Name = "Доп. инфо";
+            dgv_all_accident.Columns[29].Name = "Алкоголь";
+            dgv_all_accident.Columns[30].Name = "Семья";
+            dgv_all_accident.Columns[31].Name = "Образование";
+            dgv_all_accident.Columns[32].Name = "Профессия";
+            dgv_all_accident.Columns[33].Name = "Квалификация";
+            dgv_all_accident.Columns[34].Name = "Предприятие";
+            dgv_all_accident.Columns[35].Name = "ОКВЭД/отрасль";
         }
 
         private void Populate_dgv()
@@ -72,86 +81,137 @@ namespace testing_program
             SqlConnection myConnection; Working_with_sql working_With_Sql = new Working_with_sql();
             myConnection = working_With_Sql.connect_to_the_database();
 
-            string sqlquery = "select "+
-"CONCAT(People_for_edu.LastName, People_for_edu.Name, People_for_edu.FatherName),"+
-" seriuosness.Seriousness,"+
- "acc.Datetime,"+
- "acc.month,"+
- "CONCAT(Type_accident.N_type, Type_accident.Name),"+
- "CONCAT(Code_reason.N_code, Code_reason.Name),"+ 
- "People_for_edu.Birthday," +
- "Acc.Age_on_accident," +
- "Sex.[Name]," +
-"People_for_edu.Date_start_work," +
-"acc.[Time_acc_work(in hours)]," +
-"Acc.Dayweek," +
-"datesInstructions.Date_last_inst," +
-"datesInstructions.Time_after_instr," +
-"datesInstructions.Date_last_check," +
-"datesInstructions.Time_after_instr," +
-"Work.internship," +
-"Acc.SIZ," +
-"CONCAT( SOUT_ARM.APFD, SOUT_ARM.Biological, SOUT_ARM.II,SOUT_ARM.IZ,SOUT_ARM.Khemical,SOUT_ARM.Microclimate,SOUT_ARM.N,SOUT_ARM.NI,SOUT_ARM.Noise,SOUT_ARM.SIZ,SOUT_ARM.SS,SOUT_ARM.T,SOUT_ARM.T,SOUT_ARM.UT,SOUT_ARM.UZ,SOUT_ARM.VL,SOUT_ARM.VO)," +
-"OVPF.[Name]," +
-"Acc.Alcohol," +
-"Family.[Name]," +
-"Education.[Name]," +
-"Profession.[Name]," +
-"Qualification.[Name]," +
-"Enterprise.[Name]," +
-"Enterprise.id_OKVED " +
+            string sqlquery = "SELECT"+
+" CONCAT(People_for_edu.LastName, People_for_edu.Name, People_for_edu.FatherName) as ФИО," +
+
+     "   seriuosness.Seriousness as [Тяжесть последствий]," +
+
+      "  Datetime as [Дата происшествия]," +
+      "  month as [Месяц НС]," +
+
+      "  CONCAT(Type_accident.N_type, Type_accident.Name) as [Вид происшествия]," +
+
+      "  test1 as [Причина]," +
+
+      "  People_for_edu.Birthday as [Дата рождения]," +
+
+      "  Age_on_accident as [Возраст на момент НС]," +
+
+      "  Sex.[Name] as [Пол]," +
+
+     "    Work.Date_enter as [Дата начала труд.Деят.]," +
+
+      "  general_exp_on_accident as[Стаж работы общ]," +
+
+      "  exp_on_profession_on_accident as [Стаж работы по профессии при вып которой произошел НС]," +
+
+      "  exp_in_enterprise_on_accident as [Стаж работы в организации]," +
+
+      "  Datetime as [Время суток]," +
+
+      "  [Time_acc_work(in hours)] as [Время от начала смены]," +
+
+      "  Shedule.Name as [График работы]," +
+
+       " Dayweek as [День недели НС]," +
+
+       " datesInstructions.Date_enter_inst as [Дата вводного инструктажа]," +
+
+       " datesInstructions.Date_last_inst as [Дата повторного(последнего) инструктажа]," +
+
+     "   datesInstructions.Time_after_instr as [Время после инстр-жа], " +
+
+      "  datesInstructions.Date_last_check as [Дата проверки знаний]," +
+
+      "  datesInstructions.Time_after_instr as [Время после проверки знаний]," +
+
+      "  Work.internship as [Стажировка]," +
+      "  (SELECT COUNT(Instruct.id) From Instruct" +
+           "  Join Info_education on Info_education.id_instruct=Instruct.id" +
+           "  Where(Instruct.id_type_instruct= '5')AND(Info_education.id_human= id_human) ) as [Обучение по ОТ]," +
+
+       " test2.SIZ as [Средста Индивидуальной Защиты]," +
+
+       " SOUT_ARM.UT as [Условия Труда]," +
+
+      "  SOUT_ARM.Date_sout as[СОУТ/АРМ(Дата)]," +
+      " (SELECT" +
+                      "   STUFF((" +
+                       "  SELECT ', '+ Name" +
+                       "  from OVPF" +
+                       "  left Join Workplace_OVPF on Workplace_OVPF.id_OVPF=OVPF.id" +
+                       "  left Join Acc on acc.id_accident= Workplace_OVPF.id_acc" +
+
+                       "  Where Workplace_OVPF.id_acc= id_acc" +
+
+                       "  order by Name" +
+
+                       "  for XML path('')" +
+
+                        " ),1,2,'' ) as ovpf_acc" +
+                " FROM Workplace_OVPF cd" +
+
+                " group by cd.id_acc) as [Опасные и вредные  Производственные Факторы]," +
+
+       " People_for_edu.extra as [Доп.инфо]," +
+
+      "  Alcohol as [Алкоголь]," +
+
+       " Family.[Name] as [Семья]," +
+
+       " Education.[Name] as [Образование]," +
+
+       " Profession.[Name] as [Профессия], " +
+
+       " Qualification.[Name] as [Квалификация]," +
+
+      "  Enterprise.[Name] as [Предприятие]," +
+
+       " CONCAT(OKVED.code_OKVED, OKVED.Name) as [ОКВЭД/отрасль]" +
+
+       "  From" +
+        " (SELECT* " +
+         " From (" +
+                " SELECT id_accident as acc_id, " +
+                        " STUFF((" +
+                        " SELECT ', '+ N_code" +
+                        " from Code_reason" +
+                        " left Join Codes_reason_in_accident on Codes_reason_in_accident.id_codes= Code_reason.id" +
+
+                       "  left Join Acc on acc.id_accident= Codes_reason_in_accident.id_accident" +
+
+                        " Where Codes_reason_in_accident.id_accident= cd.id_accident" +
+
+                        " order by N_code" +
+
+                        " for XML path('')" +
+
+                        " ),1,2,'' ) as test1" +
+               "  FROM Codes_reason_in_accident cd" +
+
+"                 group by cd.id_accident) as test" +
+"                 left JOIN Acc on acc.id_accident=test.acc_id" +
+
+"         ) as test2" +
+" left JOIN People_for_edu on People_for_edu.id=id_human" +
+" JOIN seriuosness on seriuosness.id= id_seriousness" +
+" JOIN Type_accident on Type_accident.id_type = test2.id_type" +
+" JOIN Sex on sex.id= People_for_edu.id_sex" +
+" JOIN datesInstructions on datesInstructions.id_hum= People_for_edu.id" +
+" JOIN Work_actions   on Work_actions.id_work_human= People_for_edu.id" +
+" JOIN Work   on Work.id = Work_actions.id_work" +
+" JOIN Workplace on Workplace.id_people= People_for_edu.id" +
+" LEFT JOIN SOUT_ARM on SOUT_ARM.id_SOUT= Workplace.id_sout" +
 
 
 
-
-
-
-
-
-
-"from People_for_edu left Join Sex on People_for_edu.id_sex = Sex.id " +
-
-                    "left Join Education on People_for_edu.id_education = Education.id" +
-
-                   " left Join Profession on People_for_edu.id_profession = Profession.id " +
-
-                    "left Join Qualification on People_for_edu.id_qualification = Qualification.id " +
-
-                  "  left Join Family on People_for_edu.id_family = Family.id " +
-
-                   " left Join Acc on People_for_edu.id = Acc.id_human " +
-
-                   " left Join seriuosness on seriuosness.id = Acc.id_seriousness " +
-
-                   " left Join Type_accident on Type_accident.id_type = acc.id_type " +
-
-                   " left Join Work_actions on Work_actions.id_work_human = People_for_edu.id " +
-
-                   " left Join Work on Work.id = Work_actions.id_work " +
-
-                   " left Join Enterprise on Enterprise.id = Work.id_enterprise " +
-
-                  "  left Join Shedule on Shedule.id = Work.id_work_schedule " +
-
-                   " left Join Conditions on Conditions.id = Work.id_conditions " +
-
-                    "left Join OVPF on OVPF.id = Work.id_OVPF " +
-
-                   " left Join Info_education on Info_education.id_human = People_for_edu.id " +
-
-                  "  left Join Instruct on Instruct.id = Info_education.id_instruct " +
-
-                   " left Join Type_instruct on Type_instruct.id = Instruct.id_type_instruct " +
-
-                   " left Join Topic_instruct on Topic_instruct.id = Instruct.id_topic_instruct " +
-
-                   " left Join Codes_reason_in_accident on Codes_reason_in_accident.id_accident = acc.id_accident " +
-
-                   " left Join Code_reason on Code_reason.id = Codes_reason_in_accident.id_codes " +
-
-                   " left Join datesInstructions on datesInstructions.id_hum = People_for_edu.id " +
-
-                    "left join SOUT_ARM on SOUT_ARM.id_acc = Acc.id_accident ";  
+" JOIN Family on Family.id= People_for_edu.id_family" +
+" JOIN Education on Education.id= People_for_edu.id_education" +
+" JOIN Profession on Profession.id= People_for_edu.id_profession" +
+" JOIN Qualification  on Qualification.id = People_for_edu.id_qualification" +
+" JOIN Enterprise on Enterprise.id= Work.id_enterprise" +
+" JOIN OKVED on OKVED.id= Enterprise.id_OKVED" +
+" JOIN Shedule on Shedule.id= Work.id_work_schedule";  
             SqlCommand sqlCommand = new SqlCommand(sqlquery, myConnection);
             SqlDataReader reader = sqlCommand.ExecuteReader();
 
@@ -188,6 +248,15 @@ namespace testing_program
                 data[data.Count - 1][24] = reader[24].ToString();
                 data[data.Count - 1][25] = reader[25].ToString();
                 data[data.Count - 1][26] = reader[26].ToString();
+                data[data.Count - 1][27] = reader[27].ToString();
+                data[data.Count - 1][28] = reader[28].ToString();
+                data[data.Count - 1][29] = reader[29].ToString();
+                data[data.Count - 1][30] = reader[30].ToString();
+                data[data.Count - 1][31] = reader[31].ToString();
+                data[data.Count - 1][32] = reader[32].ToString();
+                data[data.Count - 1][33] = reader[33].ToString();
+                data[data.Count - 1][34] = reader[34].ToString();
+                data[data.Count - 1][35] = reader[35].ToString();
             }
             reader.Close();
 

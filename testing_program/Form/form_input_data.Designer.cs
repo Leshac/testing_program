@@ -77,20 +77,32 @@
             this.cb_Shedule = new System.Windows.Forms.ComboBox();
             this.label17 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.tb_exp_in_enterprise = new System.Windows.Forms.TextBox();
+            this.num_enterprise_day = new System.Windows.Forms.NumericUpDown();
+            this.num_enterprise_month = new System.Windows.Forms.NumericUpDown();
+            this.num_enterprise_old = new System.Windows.Forms.NumericUpDown();
+            this.num_on_prof_day = new System.Windows.Forms.NumericUpDown();
+            this.num_on_prof_month = new System.Windows.Forms.NumericUpDown();
+            this.num_on_prof_old = new System.Windows.Forms.NumericUpDown();
+            this.num_gen_day = new System.Windows.Forms.NumericUpDown();
+            this.num_gen_month = new System.Windows.Forms.NumericUpDown();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.num_gen_old = new System.Windows.Forms.NumericUpDown();
             this.label14 = new System.Windows.Forms.Label();
-            this.tb_exp_on_profession = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.tb_general_exp = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.dtp_data_enter = new System.Windows.Forms.DateTimePicker();
             this.label11 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.chb_check_knowledge = new System.Windows.Forms.CheckBox();
+            this.chb_lost_instr = new System.Windows.Forms.CheckBox();
+            this.chb_first_instr = new System.Windows.Forms.CheckBox();
             this.label41 = new System.Windows.Forms.Label();
             this.cb_leaning = new System.Windows.Forms.ComboBox();
             this.dtp_Date_last_check = new System.Windows.Forms.DateTimePicker();
             this.label22 = new System.Windows.Forms.Label();
-            this.Date_last_inst = new System.Windows.Forms.DateTimePicker();
+            this.dtp_Date_last_inst = new System.Windows.Forms.DateTimePicker();
             this.dtp_Date_first_inst = new System.Windows.Forms.DateTimePicker();
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
@@ -104,9 +116,13 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.rtb_EXTRA = new System.Windows.Forms.RichTextBox();
+            this.chb_insert_sout = new System.Windows.Forms.CheckBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.lb_ovpf = new System.Windows.Forms.ListBox();
+            this.gb_UT = new System.Windows.Forms.GroupBox();
+            this.btn_calculate_ut = new System.Windows.Forms.Button();
+            this.label45 = new System.Windows.Forms.Label();
+            this.dtp_data_SOUT = new System.Windows.Forms.DateTimePicker();
             this.tb_ut = new System.Windows.Forms.TextBox();
             this.cb_yt_n = new System.Windows.Forms.ComboBox();
             this.cb_yt_t = new System.Windows.Forms.ComboBox();
@@ -144,6 +160,15 @@
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.num_enterprise_day)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_enterprise_month)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_enterprise_old)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_on_prof_day)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_on_prof_month)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_on_prof_old)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_gen_day)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_gen_month)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_gen_old)).BeginInit();
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -151,7 +176,7 @@
             this.tabPage2.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.groupBox8.SuspendLayout();
-            this.groupBox7.SuspendLayout();
+            this.gb_UT.SuspendLayout();
             this.SuspendLayout();
             // 
             // tb_LastName
@@ -274,6 +299,7 @@
             this.dtp_Birthday.Name = "dtp_Birthday";
             this.dtp_Birthday.Size = new System.Drawing.Size(200, 20);
             this.dtp_Birthday.TabIndex = 4;
+            this.dtp_Birthday.ValueChanged += new System.EventHandler(this.dtp_Birthday_ValueChanged);
             // 
             // groupBox1
             // 
@@ -317,8 +343,10 @@
             // 
             // dtp_Time_acc_work
             // 
+            this.dtp_Time_acc_work.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dtp_Time_acc_work.Location = new System.Drawing.Point(152, 120);
             this.dtp_Time_acc_work.Name = "dtp_Time_acc_work";
+            this.dtp_Time_acc_work.ShowUpDown = true;
             this.dtp_Time_acc_work.Size = new System.Drawing.Size(121, 20);
             this.dtp_Time_acc_work.TabIndex = 10;
             // 
@@ -347,6 +375,7 @@
             this.tb_Dayweek.Size = new System.Drawing.Size(60, 20);
             this.tb_Dayweek.TabIndex = 0;
             this.tb_Dayweek.TabStop = false;
+            this.tb_Dayweek.Text = "0";
             // 
             // label18
             // 
@@ -365,6 +394,7 @@
             this.tb_time_ot_nach.Size = new System.Drawing.Size(60, 20);
             this.tb_time_ot_nach.TabIndex = 0;
             this.tb_time_ot_nach.TabStop = false;
+            this.tb_time_ot_nach.Text = "0";
             // 
             // label16
             // 
@@ -383,6 +413,7 @@
             this.tb_Age_on_accident.Size = new System.Drawing.Size(60, 20);
             this.tb_Age_on_accident.TabIndex = 0;
             this.tb_Age_on_accident.TabStop = false;
+            this.tb_Age_on_accident.Text = "0";
             // 
             // label9
             // 
@@ -410,6 +441,7 @@
             this.tb_month.Size = new System.Drawing.Size(60, 20);
             this.tb_month.TabIndex = 0;
             this.tb_month.TabStop = false;
+            this.tb_month.Text = "0";
             // 
             // cb_Type_accident
             // 
@@ -432,9 +464,10 @@
             // lb_Code_reason
             // 
             this.lb_Code_reason.FormattingEnabled = true;
-            this.lb_Code_reason.Location = new System.Drawing.Point(427, 71);
+            this.lb_Code_reason.Location = new System.Drawing.Point(427, 58);
             this.lb_Code_reason.Name = "lb_Code_reason";
-            this.lb_Code_reason.Size = new System.Drawing.Size(203, 30);
+            this.lb_Code_reason.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
+            this.lb_Code_reason.Size = new System.Drawing.Size(203, 121);
             this.lb_Code_reason.TabIndex = 7;
             // 
             // label6
@@ -461,6 +494,7 @@
             this.dtp_date_acc.Name = "dtp_date_acc";
             this.dtp_date_acc.Size = new System.Drawing.Size(200, 20);
             this.dtp_date_acc.TabIndex = 5;
+            this.dtp_date_acc.ValueChanged += new System.EventHandler(this.dtp_date_acc_ValueChanged);
             // 
             // label3
             // 
@@ -602,6 +636,7 @@
             this.cb_Shedule.Size = new System.Drawing.Size(163, 21);
             this.cb_Shedule.TabIndex = 11;
             this.cb_Shedule.DropDown += new System.EventHandler(this.cb_Shedule_DropDown);
+            this.cb_Shedule.DropDownClosed += new System.EventHandler(this.cb_Shedule_DropDownClosed);
             // 
             // label17
             // 
@@ -614,72 +649,144 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.tb_exp_in_enterprise);
+            this.groupBox4.Controls.Add(this.num_enterprise_day);
+            this.groupBox4.Controls.Add(this.num_enterprise_month);
+            this.groupBox4.Controls.Add(this.num_enterprise_old);
+            this.groupBox4.Controls.Add(this.num_on_prof_day);
+            this.groupBox4.Controls.Add(this.num_on_prof_month);
+            this.groupBox4.Controls.Add(this.num_on_prof_old);
+            this.groupBox4.Controls.Add(this.num_gen_day);
+            this.groupBox4.Controls.Add(this.num_gen_month);
+            this.groupBox4.Controls.Add(this.label48);
+            this.groupBox4.Controls.Add(this.label47);
+            this.groupBox4.Controls.Add(this.label46);
+            this.groupBox4.Controls.Add(this.num_gen_old);
             this.groupBox4.Controls.Add(this.label14);
-            this.groupBox4.Controls.Add(this.tb_exp_on_profession);
             this.groupBox4.Controls.Add(this.label13);
-            this.groupBox4.Controls.Add(this.tb_general_exp);
             this.groupBox4.Controls.Add(this.label12);
             this.groupBox4.Location = new System.Drawing.Point(655, 19);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(237, 124);
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Данные для контроля";
+            this.groupBox4.Text = "Стаж работы";
             // 
-            // tb_exp_in_enterprise
+            // num_enterprise_day
             // 
-            this.tb_exp_in_enterprise.Location = new System.Drawing.Point(155, 89);
-            this.tb_exp_in_enterprise.Name = "tb_exp_in_enterprise";
-            this.tb_exp_in_enterprise.ReadOnly = true;
-            this.tb_exp_in_enterprise.Size = new System.Drawing.Size(60, 20);
-            this.tb_exp_in_enterprise.TabIndex = 0;
-            this.tb_exp_in_enterprise.TabStop = false;
+            this.num_enterprise_day.Location = new System.Drawing.Point(188, 97);
+            this.num_enterprise_day.Name = "num_enterprise_day";
+            this.num_enterprise_day.Size = new System.Drawing.Size(43, 20);
+            this.num_enterprise_day.TabIndex = 17;
+            // 
+            // num_enterprise_month
+            // 
+            this.num_enterprise_month.Location = new System.Drawing.Point(138, 96);
+            this.num_enterprise_month.Name = "num_enterprise_month";
+            this.num_enterprise_month.Size = new System.Drawing.Size(44, 20);
+            this.num_enterprise_month.TabIndex = 16;
+            // 
+            // num_enterprise_old
+            // 
+            this.num_enterprise_old.Location = new System.Drawing.Point(94, 97);
+            this.num_enterprise_old.Name = "num_enterprise_old";
+            this.num_enterprise_old.Size = new System.Drawing.Size(37, 20);
+            this.num_enterprise_old.TabIndex = 15;
+            // 
+            // num_on_prof_day
+            // 
+            this.num_on_prof_day.Location = new System.Drawing.Point(188, 69);
+            this.num_on_prof_day.Name = "num_on_prof_day";
+            this.num_on_prof_day.Size = new System.Drawing.Size(43, 20);
+            this.num_on_prof_day.TabIndex = 14;
+            // 
+            // num_on_prof_month
+            // 
+            this.num_on_prof_month.Location = new System.Drawing.Point(138, 69);
+            this.num_on_prof_month.Name = "num_on_prof_month";
+            this.num_on_prof_month.Size = new System.Drawing.Size(44, 20);
+            this.num_on_prof_month.TabIndex = 13;
+            // 
+            // num_on_prof_old
+            // 
+            this.num_on_prof_old.Location = new System.Drawing.Point(94, 69);
+            this.num_on_prof_old.Name = "num_on_prof_old";
+            this.num_on_prof_old.Size = new System.Drawing.Size(37, 20);
+            this.num_on_prof_old.TabIndex = 12;
+            // 
+            // num_gen_day
+            // 
+            this.num_gen_day.Location = new System.Drawing.Point(188, 39);
+            this.num_gen_day.Name = "num_gen_day";
+            this.num_gen_day.Size = new System.Drawing.Size(43, 20);
+            this.num_gen_day.TabIndex = 11;
+            // 
+            // num_gen_month
+            // 
+            this.num_gen_month.Location = new System.Drawing.Point(138, 39);
+            this.num_gen_month.Name = "num_gen_month";
+            this.num_gen_month.Size = new System.Drawing.Size(44, 20);
+            this.num_gen_month.TabIndex = 10;
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Location = new System.Drawing.Point(191, 13);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(34, 13);
+            this.label48.TabIndex = 9;
+            this.label48.Text = "Дней";
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(133, 13);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(52, 13);
+            this.label47.TabIndex = 8;
+            this.label47.Text = "Месяцев";
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(100, 13);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(26, 13);
+            this.label46.TabIndex = 7;
+            this.label46.Text = "Лет";
+            // 
+            // num_gen_old
+            // 
+            this.num_gen_old.Location = new System.Drawing.Point(94, 39);
+            this.num_gen_old.Name = "num_gen_old";
+            this.num_gen_old.Size = new System.Drawing.Size(37, 20);
+            this.num_gen_old.TabIndex = 6;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(9, 89);
+            this.label14.Location = new System.Drawing.Point(5, 99);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(85, 26);
+            this.label14.Size = new System.Drawing.Size(81, 13);
             this.label14.TabIndex = 5;
-            this.label14.Text = "Стаж работы в \r\nорганизации";
-            // 
-            // tb_exp_on_profession
-            // 
-            this.tb_exp_on_profession.Location = new System.Drawing.Point(155, 58);
-            this.tb_exp_on_profession.Name = "tb_exp_on_profession";
-            this.tb_exp_on_profession.ReadOnly = true;
-            this.tb_exp_on_profession.Size = new System.Drawing.Size(60, 20);
-            this.tb_exp_on_profession.TabIndex = 0;
-            this.tb_exp_on_profession.TabStop = false;
+            this.label14.Text = "в организации";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(9, 61);
+            this.label13.Location = new System.Drawing.Point(5, 71);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(147, 13);
+            this.label13.Size = new System.Drawing.Size(78, 13);
             this.label13.TabIndex = 4;
-            this.label13.Text = "Стаж работы по профессии";
-            // 
-            // tb_general_exp
-            // 
-            this.tb_general_exp.Location = new System.Drawing.Point(155, 26);
-            this.tb_general_exp.Name = "tb_general_exp";
-            this.tb_general_exp.ReadOnly = true;
-            this.tb_general_exp.Size = new System.Drawing.Size(60, 20);
-            this.tb_general_exp.TabIndex = 3;
-            this.tb_general_exp.TabStop = false;
+            this.label13.Text = "по профессии";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(9, 29);
+            this.label12.Location = new System.Drawing.Point(5, 41);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(97, 13);
+            this.label12.Size = new System.Drawing.Size(43, 13);
             this.label12.TabIndex = 2;
-            this.label12.Text = "Стаж работы общ";
+            this.label12.Text = "общий ";
             // 
             // dtp_data_enter
             // 
@@ -699,11 +806,14 @@
             // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.chb_check_knowledge);
+            this.groupBox5.Controls.Add(this.chb_lost_instr);
+            this.groupBox5.Controls.Add(this.chb_first_instr);
             this.groupBox5.Controls.Add(this.label41);
             this.groupBox5.Controls.Add(this.cb_leaning);
             this.groupBox5.Controls.Add(this.dtp_Date_last_check);
             this.groupBox5.Controls.Add(this.label22);
-            this.groupBox5.Controls.Add(this.Date_last_inst);
+            this.groupBox5.Controls.Add(this.dtp_Date_last_inst);
             this.groupBox5.Controls.Add(this.dtp_Date_first_inst);
             this.groupBox5.Controls.Add(this.label20);
             this.groupBox5.Controls.Add(this.label19);
@@ -715,10 +825,43 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Данные об обучении и проверке знаний";
             // 
+            // chb_check_knowledge
+            // 
+            this.chb_check_knowledge.AutoSize = true;
+            this.chb_check_knowledge.Location = new System.Drawing.Point(20, 78);
+            this.chb_check_knowledge.Name = "chb_check_knowledge";
+            this.chb_check_knowledge.Size = new System.Drawing.Size(165, 17);
+            this.chb_check_knowledge.TabIndex = 18;
+            this.chb_check_knowledge.Text = "Добавить проверку знаний";
+            this.chb_check_knowledge.UseVisualStyleBackColor = true;
+            this.chb_check_knowledge.CheckedChanged += new System.EventHandler(this.chb_check_knowledge_CheckedChanged);
+            // 
+            // chb_lost_instr
+            // 
+            this.chb_lost_instr.AutoSize = true;
+            this.chb_lost_instr.Location = new System.Drawing.Point(353, 19);
+            this.chb_lost_instr.Name = "chb_lost_instr";
+            this.chb_lost_instr.Size = new System.Drawing.Size(196, 17);
+            this.chb_lost_instr.TabIndex = 17;
+            this.chb_lost_instr.Text = "Добавить повторный инструктаж";
+            this.chb_lost_instr.UseVisualStyleBackColor = true;
+            this.chb_lost_instr.CheckedChanged += new System.EventHandler(this.chb_lost_instr_CheckedChanged);
+            // 
+            // chb_first_instr
+            // 
+            this.chb_first_instr.AutoSize = true;
+            this.chb_first_instr.Location = new System.Drawing.Point(20, 24);
+            this.chb_first_instr.Name = "chb_first_instr";
+            this.chb_first_instr.Size = new System.Drawing.Size(185, 17);
+            this.chb_first_instr.TabIndex = 16;
+            this.chb_first_instr.Text = "Добавить вводный инструктаж";
+            this.chb_first_instr.UseVisualStyleBackColor = true;
+            this.chb_first_instr.CheckedChanged += new System.EventHandler(this.chb_first_instr_CheckedChanged);
+            // 
             // label41
             // 
             this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(350, 77);
+            this.label41.Location = new System.Drawing.Point(350, 99);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(75, 13);
             this.label41.TabIndex = 15;
@@ -727,7 +870,7 @@
             // cb_leaning
             // 
             this.cb_leaning.FormattingEnabled = true;
-            this.cb_leaning.Location = new System.Drawing.Point(496, 74);
+            this.cb_leaning.Location = new System.Drawing.Point(496, 96);
             this.cb_leaning.Name = "cb_leaning";
             this.cb_leaning.Size = new System.Drawing.Size(121, 21);
             this.cb_leaning.TabIndex = 14;
@@ -735,38 +878,44 @@
             // 
             // dtp_Date_last_check
             // 
-            this.dtp_Date_last_check.Location = new System.Drawing.Point(174, 75);
+            this.dtp_Date_last_check.Enabled = false;
+            this.dtp_Date_last_check.Location = new System.Drawing.Point(174, 103);
             this.dtp_Date_last_check.Name = "dtp_Date_last_check";
             this.dtp_Date_last_check.Size = new System.Drawing.Size(149, 20);
             this.dtp_Date_last_check.TabIndex = 13;
+            this.dtp_Date_last_check.ValueChanged += new System.EventHandler(this.dtp_Date_last_check_ValueChanged);
             // 
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(14, 77);
+            this.label22.Location = new System.Drawing.Point(14, 105);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(123, 13);
             this.label22.TabIndex = 13;
             this.label22.Text = "Дата проверки знаний";
             // 
-            // Date_last_inst
+            // dtp_Date_last_inst
             // 
-            this.Date_last_inst.Location = new System.Drawing.Point(496, 28);
-            this.Date_last_inst.Name = "Date_last_inst";
-            this.Date_last_inst.Size = new System.Drawing.Size(134, 20);
-            this.Date_last_inst.TabIndex = 12;
+            this.dtp_Date_last_inst.Enabled = false;
+            this.dtp_Date_last_inst.Location = new System.Drawing.Point(496, 45);
+            this.dtp_Date_last_inst.Name = "dtp_Date_last_inst";
+            this.dtp_Date_last_inst.Size = new System.Drawing.Size(134, 20);
+            this.dtp_Date_last_inst.TabIndex = 12;
+            this.dtp_Date_last_inst.ValueChanged += new System.EventHandler(this.dtp_Date_last_inst_ValueChanged);
             // 
             // dtp_Date_first_inst
             // 
-            this.dtp_Date_first_inst.Location = new System.Drawing.Point(174, 34);
+            this.dtp_Date_first_inst.Enabled = false;
+            this.dtp_Date_first_inst.Location = new System.Drawing.Point(174, 51);
             this.dtp_Date_first_inst.Name = "dtp_Date_first_inst";
             this.dtp_Date_first_inst.Size = new System.Drawing.Size(149, 20);
             this.dtp_Date_first_inst.TabIndex = 11;
+            this.dtp_Date_first_inst.ValueChanged += new System.EventHandler(this.dtp_Date_first_inst_ValueChanged);
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(350, 28);
+            this.label20.Location = new System.Drawing.Point(350, 45);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(140, 26);
             this.label20.TabIndex = 2;
@@ -775,7 +924,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(14, 34);
+            this.label19.Location = new System.Drawing.Point(14, 51);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(154, 13);
             this.label19.TabIndex = 1;
@@ -802,6 +951,7 @@
             this.tb_TimeAfterInstr.Size = new System.Drawing.Size(60, 20);
             this.tb_TimeAfterInstr.TabIndex = 0;
             this.tb_TimeAfterInstr.TabStop = false;
+            this.tb_TimeAfterInstr.Text = "0";
             // 
             // label23
             // 
@@ -820,6 +970,7 @@
             this.tb_Time_after_instr.Size = new System.Drawing.Size(60, 20);
             this.tb_Time_after_instr.TabIndex = 0;
             this.tb_Time_after_instr.TabStop = false;
+            this.tb_Time_after_instr.Text = "0";
             // 
             // label21
             // 
@@ -857,8 +1008,9 @@
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.groupBox9);
+            this.tabPage2.Controls.Add(this.chb_insert_sout);
             this.tabPage2.Controls.Add(this.groupBox8);
-            this.tabPage2.Controls.Add(this.groupBox7);
+            this.tabPage2.Controls.Add(this.gb_UT);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -885,66 +1037,109 @@
             this.rtb_EXTRA.TabIndex = 0;
             this.rtb_EXTRA.Text = "";
             // 
+            // chb_insert_sout
+            // 
+            this.chb_insert_sout.AutoSize = true;
+            this.chb_insert_sout.Location = new System.Drawing.Point(13, 8);
+            this.chb_insert_sout.Name = "chb_insert_sout";
+            this.chb_insert_sout.Size = new System.Drawing.Size(132, 17);
+            this.chb_insert_sout.TabIndex = 29;
+            this.chb_insert_sout.Text = "Добавть СОУТ_АРМ";
+            this.chb_insert_sout.UseVisualStyleBackColor = true;
+            this.chb_insert_sout.CheckedChanged += new System.EventHandler(this.chb_insert_sout_CheckedChanged);
+            // 
             // groupBox8
             // 
-            this.groupBox8.Controls.Add(this.checkedListBox1);
-            this.groupBox8.Location = new System.Drawing.Point(7, 177);
+            this.groupBox8.Controls.Add(this.lb_ovpf);
+            this.groupBox8.Location = new System.Drawing.Point(7, 214);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(980, 181);
+            this.groupBox8.Size = new System.Drawing.Size(980, 144);
             this.groupBox8.TabIndex = 1;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "ОВПФ";
             // 
-            // checkedListBox1
+            // lb_ovpf
             // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(22, 35);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(376, 94);
-            this.checkedListBox1.TabIndex = 0;
+            this.lb_ovpf.FormattingEnabled = true;
+            this.lb_ovpf.Location = new System.Drawing.Point(6, 19);
+            this.lb_ovpf.MultiColumn = true;
+            this.lb_ovpf.Name = "lb_ovpf";
+            this.lb_ovpf.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
+            this.lb_ovpf.Size = new System.Drawing.Size(641, 108);
+            this.lb_ovpf.TabIndex = 0;
             // 
-            // groupBox7
+            // gb_UT
             // 
-            this.groupBox7.Controls.Add(this.tb_ut);
-            this.groupBox7.Controls.Add(this.cb_yt_n);
-            this.groupBox7.Controls.Add(this.cb_yt_t);
-            this.groupBox7.Controls.Add(this.cb_yt_ss);
-            this.groupBox7.Controls.Add(this.cb_yt_ii);
-            this.groupBox7.Controls.Add(this.cb_yt_nii);
-            this.groupBox7.Controls.Add(this.cb_yt_vp);
-            this.groupBox7.Controls.Add(this.cb_yt_vo);
-            this.groupBox7.Controls.Add(this.cb_yt_yz);
-            this.groupBox7.Controls.Add(this.cb_yt_iz);
-            this.groupBox7.Controls.Add(this.cb_yt_hum);
-            this.groupBox7.Controls.Add(this.cb_yt_apfd);
-            this.groupBox7.Controls.Add(this.cb_yt_biology);
-            this.groupBox7.Controls.Add(this.cb_yt_microclimat);
-            this.groupBox7.Controls.Add(this.label39);
-            this.groupBox7.Controls.Add(this.label38);
-            this.groupBox7.Controls.Add(this.label37);
-            this.groupBox7.Controls.Add(this.label36);
-            this.groupBox7.Controls.Add(this.label35);
-            this.groupBox7.Controls.Add(this.label34);
-            this.groupBox7.Controls.Add(this.label33);
-            this.groupBox7.Controls.Add(this.label32);
-            this.groupBox7.Controls.Add(this.label31);
-            this.groupBox7.Controls.Add(this.label30);
-            this.groupBox7.Controls.Add(this.label29);
-            this.groupBox7.Controls.Add(this.label28);
-            this.groupBox7.Controls.Add(this.label27);
-            this.groupBox7.Controls.Add(this.label26);
-            this.groupBox7.Controls.Add(this.label25);
-            this.groupBox7.Controls.Add(this.cb_yt_him);
-            this.groupBox7.Location = new System.Drawing.Point(7, 6);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(980, 164);
-            this.groupBox7.TabIndex = 0;
-            this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Условия труда";
+            this.gb_UT.Controls.Add(this.btn_calculate_ut);
+            this.gb_UT.Controls.Add(this.label45);
+            this.gb_UT.Controls.Add(this.dtp_data_SOUT);
+            this.gb_UT.Controls.Add(this.tb_ut);
+            this.gb_UT.Controls.Add(this.cb_yt_n);
+            this.gb_UT.Controls.Add(this.cb_yt_t);
+            this.gb_UT.Controls.Add(this.cb_yt_ss);
+            this.gb_UT.Controls.Add(this.cb_yt_ii);
+            this.gb_UT.Controls.Add(this.cb_yt_nii);
+            this.gb_UT.Controls.Add(this.cb_yt_vp);
+            this.gb_UT.Controls.Add(this.cb_yt_vo);
+            this.gb_UT.Controls.Add(this.cb_yt_yz);
+            this.gb_UT.Controls.Add(this.cb_yt_iz);
+            this.gb_UT.Controls.Add(this.cb_yt_hum);
+            this.gb_UT.Controls.Add(this.cb_yt_apfd);
+            this.gb_UT.Controls.Add(this.cb_yt_biology);
+            this.gb_UT.Controls.Add(this.cb_yt_microclimat);
+            this.gb_UT.Controls.Add(this.label39);
+            this.gb_UT.Controls.Add(this.label38);
+            this.gb_UT.Controls.Add(this.label37);
+            this.gb_UT.Controls.Add(this.label36);
+            this.gb_UT.Controls.Add(this.label35);
+            this.gb_UT.Controls.Add(this.label34);
+            this.gb_UT.Controls.Add(this.label33);
+            this.gb_UT.Controls.Add(this.label32);
+            this.gb_UT.Controls.Add(this.label31);
+            this.gb_UT.Controls.Add(this.label30);
+            this.gb_UT.Controls.Add(this.label29);
+            this.gb_UT.Controls.Add(this.label28);
+            this.gb_UT.Controls.Add(this.label27);
+            this.gb_UT.Controls.Add(this.label26);
+            this.gb_UT.Controls.Add(this.label25);
+            this.gb_UT.Controls.Add(this.cb_yt_him);
+            this.gb_UT.Enabled = false;
+            this.gb_UT.Location = new System.Drawing.Point(7, 31);
+            this.gb_UT.Name = "gb_UT";
+            this.gb_UT.Size = new System.Drawing.Size(980, 177);
+            this.gb_UT.TabIndex = 0;
+            this.gb_UT.TabStop = false;
+            this.gb_UT.Text = "Условия труда";
+            // 
+            // btn_calculate_ut
+            // 
+            this.btn_calculate_ut.Location = new System.Drawing.Point(704, 144);
+            this.btn_calculate_ut.Name = "btn_calculate_ut";
+            this.btn_calculate_ut.Size = new System.Drawing.Size(121, 23);
+            this.btn_calculate_ut.TabIndex = 32;
+            this.btn_calculate_ut.Text = "Рассчитать УТ";
+            this.btn_calculate_ut.UseVisualStyleBackColor = true;
+            this.btn_calculate_ut.Click += new System.EventHandler(this.btn_calculate_ut_Click);
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Location = new System.Drawing.Point(19, 25);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(96, 13);
+            this.label45.TabIndex = 31;
+            this.label45.Text = "Дата СОУД/АРМ";
+            // 
+            // dtp_data_SOUT
+            // 
+            this.dtp_data_SOUT.Location = new System.Drawing.Point(121, 21);
+            this.dtp_data_SOUT.Name = "dtp_data_SOUT";
+            this.dtp_data_SOUT.Size = new System.Drawing.Size(200, 20);
+            this.dtp_data_SOUT.TabIndex = 30;
             // 
             // tb_ut
             // 
-            this.tb_ut.Location = new System.Drawing.Point(704, 86);
+            this.tb_ut.Location = new System.Drawing.Point(704, 118);
             this.tb_ut.Name = "tb_ut";
             this.tb_ut.ReadOnly = true;
             this.tb_ut.Size = new System.Drawing.Size(121, 20);
@@ -954,111 +1149,124 @@
             // cb_yt_n
             // 
             this.cb_yt_n.FormattingEnabled = true;
-            this.cb_yt_n.Location = new System.Drawing.Point(704, 56);
+            this.cb_yt_n.Location = new System.Drawing.Point(704, 88);
             this.cb_yt_n.Name = "cb_yt_n";
             this.cb_yt_n.Size = new System.Drawing.Size(121, 21);
             this.cb_yt_n.TabIndex = 28;
+            this.cb_yt_n.DropDown += new System.EventHandler(this.cb_yt_n_DropDown);
             // 
             // cb_yt_t
             // 
             this.cb_yt_t.FormattingEnabled = true;
-            this.cb_yt_t.Location = new System.Drawing.Point(704, 19);
+            this.cb_yt_t.Location = new System.Drawing.Point(704, 51);
             this.cb_yt_t.Name = "cb_yt_t";
             this.cb_yt_t.Size = new System.Drawing.Size(121, 21);
             this.cb_yt_t.TabIndex = 27;
+            this.cb_yt_t.DropDown += new System.EventHandler(this.cb_yt_t_DropDown);
             // 
             // cb_yt_ss
             // 
             this.cb_yt_ss.FormattingEnabled = true;
-            this.cb_yt_ss.Location = new System.Drawing.Point(526, 117);
+            this.cb_yt_ss.Location = new System.Drawing.Point(526, 149);
             this.cb_yt_ss.Name = "cb_yt_ss";
             this.cb_yt_ss.Size = new System.Drawing.Size(121, 21);
             this.cb_yt_ss.TabIndex = 26;
+            this.cb_yt_ss.DropDown += new System.EventHandler(this.cb_yt_ss_DropDown);
             // 
             // cb_yt_ii
             // 
             this.cb_yt_ii.FormattingEnabled = true;
-            this.cb_yt_ii.Location = new System.Drawing.Point(526, 86);
+            this.cb_yt_ii.Location = new System.Drawing.Point(526, 118);
             this.cb_yt_ii.Name = "cb_yt_ii";
             this.cb_yt_ii.Size = new System.Drawing.Size(121, 21);
             this.cb_yt_ii.TabIndex = 25;
+            this.cb_yt_ii.DropDown += new System.EventHandler(this.cb_yt_ii_DropDown);
             // 
             // cb_yt_nii
             // 
             this.cb_yt_nii.FormattingEnabled = true;
-            this.cb_yt_nii.Location = new System.Drawing.Point(526, 56);
+            this.cb_yt_nii.Location = new System.Drawing.Point(526, 88);
             this.cb_yt_nii.Name = "cb_yt_nii";
             this.cb_yt_nii.Size = new System.Drawing.Size(121, 21);
             this.cb_yt_nii.TabIndex = 24;
+            this.cb_yt_nii.DropDown += new System.EventHandler(this.cb_yt_nii_DropDown);
             // 
             // cb_yt_vp
             // 
             this.cb_yt_vp.FormattingEnabled = true;
-            this.cb_yt_vp.Location = new System.Drawing.Point(526, 19);
+            this.cb_yt_vp.Location = new System.Drawing.Point(526, 51);
             this.cb_yt_vp.Name = "cb_yt_vp";
             this.cb_yt_vp.Size = new System.Drawing.Size(121, 21);
             this.cb_yt_vp.TabIndex = 23;
+            this.cb_yt_vp.DropDown += new System.EventHandler(this.cb_yt_vp_DropDown);
             // 
             // cb_yt_vo
             // 
             this.cb_yt_vo.FormattingEnabled = true;
-            this.cb_yt_vo.Location = new System.Drawing.Point(306, 116);
+            this.cb_yt_vo.Location = new System.Drawing.Point(306, 148);
             this.cb_yt_vo.Name = "cb_yt_vo";
             this.cb_yt_vo.Size = new System.Drawing.Size(121, 21);
             this.cb_yt_vo.TabIndex = 22;
+            this.cb_yt_vo.DropDown += new System.EventHandler(this.cb_yt_vo_DropDown);
             // 
             // cb_yt_yz
             // 
             this.cb_yt_yz.FormattingEnabled = true;
-            this.cb_yt_yz.Location = new System.Drawing.Point(306, 87);
+            this.cb_yt_yz.Location = new System.Drawing.Point(306, 119);
             this.cb_yt_yz.Name = "cb_yt_yz";
             this.cb_yt_yz.Size = new System.Drawing.Size(121, 21);
             this.cb_yt_yz.TabIndex = 21;
+            this.cb_yt_yz.DropDown += new System.EventHandler(this.cb_yt_yz_DropDown);
             // 
             // cb_yt_iz
             // 
             this.cb_yt_iz.FormattingEnabled = true;
-            this.cb_yt_iz.Location = new System.Drawing.Point(306, 56);
+            this.cb_yt_iz.Location = new System.Drawing.Point(306, 88);
             this.cb_yt_iz.Name = "cb_yt_iz";
             this.cb_yt_iz.Size = new System.Drawing.Size(121, 21);
             this.cb_yt_iz.TabIndex = 20;
+            this.cb_yt_iz.DropDown += new System.EventHandler(this.cb_yt_iz_DropDown);
             // 
             // cb_yt_hum
             // 
             this.cb_yt_hum.FormattingEnabled = true;
-            this.cb_yt_hum.Location = new System.Drawing.Point(306, 19);
+            this.cb_yt_hum.Location = new System.Drawing.Point(306, 51);
             this.cb_yt_hum.Name = "cb_yt_hum";
             this.cb_yt_hum.Size = new System.Drawing.Size(121, 21);
             this.cb_yt_hum.TabIndex = 19;
+            this.cb_yt_hum.DropDown += new System.EventHandler(this.cb_yt_hum_DropDown);
             // 
             // cb_yt_apfd
             // 
             this.cb_yt_apfd.FormattingEnabled = true;
-            this.cb_yt_apfd.Location = new System.Drawing.Point(109, 117);
+            this.cb_yt_apfd.Location = new System.Drawing.Point(109, 149);
             this.cb_yt_apfd.Name = "cb_yt_apfd";
             this.cb_yt_apfd.Size = new System.Drawing.Size(121, 21);
             this.cb_yt_apfd.TabIndex = 18;
+            this.cb_yt_apfd.DropDown += new System.EventHandler(this.cb_yt_apfd_DropDown);
             // 
             // cb_yt_biology
             // 
             this.cb_yt_biology.FormattingEnabled = true;
-            this.cb_yt_biology.Location = new System.Drawing.Point(109, 87);
+            this.cb_yt_biology.Location = new System.Drawing.Point(109, 119);
             this.cb_yt_biology.Name = "cb_yt_biology";
             this.cb_yt_biology.Size = new System.Drawing.Size(121, 21);
             this.cb_yt_biology.TabIndex = 17;
+            this.cb_yt_biology.DropDown += new System.EventHandler(this.cb_yt_biology_DropDown);
             // 
             // cb_yt_microclimat
             // 
             this.cb_yt_microclimat.FormattingEnabled = true;
-            this.cb_yt_microclimat.Location = new System.Drawing.Point(109, 56);
+            this.cb_yt_microclimat.Location = new System.Drawing.Point(109, 88);
             this.cb_yt_microclimat.Name = "cb_yt_microclimat";
             this.cb_yt_microclimat.Size = new System.Drawing.Size(121, 21);
             this.cb_yt_microclimat.TabIndex = 16;
+            this.cb_yt_microclimat.DropDown += new System.EventHandler(this.cb_yt_microclimat_DropDown);
             // 
             // label39
             // 
             this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(676, 89);
+            this.label39.Location = new System.Drawing.Point(676, 121);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(22, 13);
             this.label39.TabIndex = 15;
@@ -1067,7 +1275,7 @@
             // label38
             // 
             this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(675, 59);
+            this.label38.Location = new System.Drawing.Point(675, 91);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(15, 13);
             this.label38.TabIndex = 14;
@@ -1076,7 +1284,7 @@
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(675, 22);
+            this.label37.Location = new System.Drawing.Point(675, 54);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(14, 13);
             this.label37.TabIndex = 13;
@@ -1085,7 +1293,7 @@
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(477, 120);
+            this.label36.Location = new System.Drawing.Point(477, 152);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(21, 13);
             this.label36.TabIndex = 12;
@@ -1094,7 +1302,7 @@
             // label35
             // 
             this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(477, 90);
+            this.label35.Location = new System.Drawing.Point(477, 122);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(23, 13);
             this.label35.TabIndex = 11;
@@ -1103,7 +1311,7 @@
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(477, 59);
+            this.label34.Location = new System.Drawing.Point(477, 91);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(29, 13);
             this.label34.TabIndex = 10;
@@ -1112,7 +1320,7 @@
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(477, 22);
+            this.label33.Location = new System.Drawing.Point(477, 54);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(22, 13);
             this.label33.TabIndex = 9;
@@ -1121,7 +1329,7 @@
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(263, 119);
+            this.label32.Location = new System.Drawing.Point(263, 151);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(22, 13);
             this.label32.TabIndex = 8;
@@ -1130,7 +1338,7 @@
             // label31
             // 
             this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(263, 90);
+            this.label31.Location = new System.Drawing.Point(263, 122);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(22, 13);
             this.label31.TabIndex = 7;
@@ -1139,7 +1347,7 @@
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(263, 59);
+            this.label30.Location = new System.Drawing.Point(263, 91);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(22, 13);
             this.label30.TabIndex = 6;
@@ -1148,7 +1356,7 @@
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(263, 22);
+            this.label29.Location = new System.Drawing.Point(263, 54);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(33, 13);
             this.label29.TabIndex = 5;
@@ -1157,7 +1365,7 @@
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(19, 119);
+            this.label28.Location = new System.Drawing.Point(19, 151);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(42, 13);
             this.label28.TabIndex = 4;
@@ -1166,7 +1374,7 @@
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(19, 90);
+            this.label27.Location = new System.Drawing.Point(19, 122);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(55, 13);
             this.label27.TabIndex = 3;
@@ -1175,7 +1383,7 @@
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(19, 59);
+            this.label26.Location = new System.Drawing.Point(19, 91);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(77, 13);
             this.label26.TabIndex = 2;
@@ -1184,7 +1392,7 @@
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(19, 22);
+            this.label25.Location = new System.Drawing.Point(19, 54);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(28, 13);
             this.label25.TabIndex = 1;
@@ -1193,10 +1401,11 @@
             // cb_yt_him
             // 
             this.cb_yt_him.FormattingEnabled = true;
-            this.cb_yt_him.Location = new System.Drawing.Point(109, 19);
+            this.cb_yt_him.Location = new System.Drawing.Point(109, 51);
             this.cb_yt_him.Name = "cb_yt_him";
             this.cb_yt_him.Size = new System.Drawing.Size(121, 21);
             this.cb_yt_him.TabIndex = 0;
+            this.cb_yt_him.DropDown += new System.EventHandler(this.cb_yt_him_DropDown);
             // 
             // btn_exit
             // 
@@ -1206,6 +1415,7 @@
             this.btn_exit.TabIndex = 9;
             this.btn_exit.Text = "Выход";
             this.btn_exit.UseVisualStyleBackColor = true;
+            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
             // 
             // btm_create
             // 
@@ -1228,6 +1438,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "form_input_data";
             this.Text = "Ввод данных в систему";
+            this.Load += new System.EventHandler(this.form_input_data_Load);
             this.Group_box.ResumeLayout(false);
             this.Group_box.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -1238,6 +1449,15 @@
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.num_enterprise_day)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_enterprise_month)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_enterprise_old)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_on_prof_day)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_on_prof_month)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_on_prof_old)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_gen_day)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_gen_month)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_gen_old)).EndInit();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.groupBox6.ResumeLayout(false);
@@ -1245,10 +1465,11 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
             this.groupBox9.ResumeLayout(false);
             this.groupBox8.ResumeLayout(false);
-            this.groupBox7.ResumeLayout(false);
-            this.groupBox7.PerformLayout();
+            this.gb_UT.ResumeLayout(false);
+            this.gb_UT.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1292,18 +1513,15 @@
         private System.Windows.Forms.ComboBox cb_Shedule;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.TextBox tb_exp_in_enterprise;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox tb_exp_on_profession;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox tb_general_exp;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.DateTimePicker dtp_data_enter;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.DateTimePicker dtp_Date_last_check;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.DateTimePicker Date_last_inst;
+        private System.Windows.Forms.DateTimePicker dtp_Date_last_inst;
         private System.Windows.Forms.DateTimePicker dtp_Date_first_inst;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label19;
@@ -1318,7 +1536,7 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.GroupBox groupBox8;
-        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.GroupBox gb_UT;
         private System.Windows.Forms.TextBox tb_ut;
         private System.Windows.Forms.ComboBox cb_yt_n;
         private System.Windows.Forms.ComboBox cb_yt_t;
@@ -1362,8 +1580,27 @@
         private System.Windows.Forms.ComboBox cb_leaning;
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.RichTextBox rtb_EXTRA;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.Button btn_exit;
         private System.Windows.Forms.Button btm_create;
+        private System.Windows.Forms.CheckBox chb_lost_instr;
+        private System.Windows.Forms.CheckBox chb_first_instr;
+        private System.Windows.Forms.CheckBox chb_check_knowledge;
+        private System.Windows.Forms.DateTimePicker dtp_data_SOUT;
+        private System.Windows.Forms.CheckBox chb_insert_sout;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Button btn_calculate_ut;
+        private System.Windows.Forms.ListBox lb_ovpf;
+        private System.Windows.Forms.NumericUpDown num_gen_old;
+        private System.Windows.Forms.NumericUpDown num_enterprise_day;
+        private System.Windows.Forms.NumericUpDown num_enterprise_month;
+        private System.Windows.Forms.NumericUpDown num_enterprise_old;
+        private System.Windows.Forms.NumericUpDown num_on_prof_day;
+        private System.Windows.Forms.NumericUpDown num_on_prof_month;
+        private System.Windows.Forms.NumericUpDown num_on_prof_old;
+        private System.Windows.Forms.NumericUpDown num_gen_day;
+        private System.Windows.Forms.NumericUpDown num_gen_month;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Label label46;
     }
 }
