@@ -123,12 +123,12 @@ namespace testing_program
 
       "  datesInstructions.Date_last_check as [Дата проверки знаний]," +
 
-      "  datesInstructions.Time_after_instr as [Время после проверки знаний]," +
+      "  datesInstructions.Time_after_check as [Время после проверки знаний]," +
 
       "  Work.internship as [Стажировка]," +
       "  (SELECT COUNT(Instruct.id) From Instruct" +
            "  Join Info_education on Info_education.id_instruct=Instruct.id" +
-           "  Where(Instruct.id_type_instruct= '5')AND(Info_education.id_human= id_human) ) as [Обучение по ОТ]," +
+           "  Where(Instruct.id_type_instruct= '5')AND(Info_education.id_human= test2.id_human) ) as [Обучение по ОТ]," +
 
        " test2.SIZ as [Средста Индивидуальной Защиты]," +
 
@@ -142,7 +142,7 @@ namespace testing_program
                        "  left Join Workplace_OVPF on Workplace_OVPF.id_OVPF=OVPF.id" +
                        "  left Join Acc on acc.id_accident= Workplace_OVPF.id_acc" +
 
-                       "  Where Workplace_OVPF.id_acc= id_acc" +
+                       "  Where Workplace_OVPF.id_acc= test2.acc_id" +
 
                        "  order by Name" +
 
@@ -150,7 +150,7 @@ namespace testing_program
 
                         " ),1,2,'' ) as ovpf_acc" +
                 " FROM Workplace_OVPF cd" +
-
+                " Where cd.id_acc=test2.acc_id" +
                 " group by cd.id_acc) as [Опасные и вредные  Производственные Факторы]," +
 
        " People_for_edu.extra as [Доп.инфо]," +

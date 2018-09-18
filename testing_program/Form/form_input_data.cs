@@ -26,7 +26,14 @@ namespace testing_program
             int id_acc= insert_data_in_DB.insert_in_table_acc(id_human, cb_Type_accident.SelectedValue, cb_seriuosness.SelectedValue, get_data_time(), time_start(), Convert.ToString(dtp_date_acc.Value.DayOfWeek), Age_on_accident(), cb_alkogol.Checked, cb_siz.Checked, dtp_date_acc.Value.Month, get_general_exp(), id_work, get_enterprise_exp(), get_on_prof_exp());
             int id_work_action =insert_data_in_DB.insert_in_table_Work_action(id_human,id_work);
             insert_data_in_DB.insert_in_table_Codes_reason_in_accident(id_acc,lb_Code_reason);
-            
+
+            if (cb_learning_OT.Checked)
+            {
+                object id_instr_ot = 5;
+                object id_ot_instr = 1004;
+                int id_instruct_ot= insert_data_in_DB.insert_in_table_Instruct(id_instr_ot, id_ot_instr, dtp_Date_first_inst.Value.Date);
+            }
+
             if (chb_first_instr.Checked) //проверка необходимости добавления инструктажей
             {
                 int id_first_instruct = 0;
@@ -59,7 +66,15 @@ namespace testing_program
             int id_sout_arm = insert_data_in_DB.insert_in_table_SOUT_ARM(dtp_data_SOUT.Value.Date,true,cb_yt_him.Text,cb_yt_microclimat.Text,cb_yt_biology.Text,cb_yt_apfd.Text,cb_yt_hum.Text,cb_yt_iz.Text,cb_yt_yz.Text,cb_yt_vo.Text,cb_yt_vp.Text,cb_yt_nii.Text,cb_yt_ii.Text,cb_yt_ss.Text,cb_yt_t.Text,cb_yt_n.Text);
             insert_data_in_DB.insert_in_table_Workplace(id_human, id_sout_arm);
             insert_data_in_DB.insert_in_table_Workplace_OVPF(lb_ovpf,id_acc);
-            int id_datesInstructions = insert_data_in_DB.insert_in_table_datesInstructions(id_human,dtp_Date_first_inst.Value.Date,dtp_Date_last_inst.Value.Date, dtp_Date_last_check.Value.Date, date_after_inst() , date_after_check());
+            if (chb_lost_instr.Checked)
+            {
+                int id_datesInstructions = insert_data_in_DB.insert_in_table_datesInstructions(id_human, dtp_Date_first_inst.Value.Date, dtp_Date_last_inst.Value.Date, dtp_Date_last_check.Value.Date, date_after_inst(), date_after_check());
+            }
+            else
+            {
+                int id_datesInstructions = insert_data_in_DB.insert_in_table_datesInstructions(id_human, dtp_Date_first_inst.Value.Date,Convert.ToDateTime(null), dtp_Date_last_check.Value.Date, date_after_inst(), date_after_check());
+            }
+
         }
 
         private void cb_sex_DropDown(object sender, EventArgs e)
