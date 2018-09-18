@@ -155,6 +155,15 @@
             this.cb_yt_him = new System.Windows.Forms.ComboBox();
             this.btn_exit = new System.Windows.Forms.Button();
             this.btm_create = new System.Windows.Forms.Button();
+            this.btn_create_new_seriuosness = new System.Windows.Forms.Button();
+            this.btn_create_new_Type_accident = new System.Windows.Forms.Button();
+            this.btn_create_code_reason = new System.Windows.Forms.Button();
+            this.btn_create_new_Shedule = new System.Windows.Forms.Button();
+            this.btn_create_new_prof = new System.Windows.Forms.Button();
+            this.btn_create_new_enterprise = new System.Windows.Forms.Button();
+            this.btn_create_new_qualification = new System.Windows.Forms.Button();
+            this.btn_create_new_education = new System.Windows.Forms.Button();
+            this.btn_create_new_OVPF = new System.Windows.Forms.Button();
             this.Group_box.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -303,6 +312,9 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btn_create_code_reason);
+            this.groupBox1.Controls.Add(this.btn_create_new_Type_accident);
+            this.groupBox1.Controls.Add(this.btn_create_new_seriuosness);
             this.groupBox1.Controls.Add(this.cb_alkogol);
             this.groupBox1.Controls.Add(this.label15);
             this.groupBox1.Controls.Add(this.dtp_Time_acc_work);
@@ -344,7 +356,7 @@
             // dtp_Time_acc_work
             // 
             this.dtp_Time_acc_work.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dtp_Time_acc_work.Location = new System.Drawing.Point(152, 120);
+            this.dtp_Time_acc_work.Location = new System.Drawing.Point(141, 120);
             this.dtp_Time_acc_work.Name = "dtp_Time_acc_work";
             this.dtp_Time_acc_work.ShowUpDown = true;
             this.dtp_Time_acc_work.Size = new System.Drawing.Size(121, 20);
@@ -446,7 +458,7 @@
             // cb_Type_accident
             // 
             this.cb_Type_accident.FormattingEnabled = true;
-            this.cb_Type_accident.Location = new System.Drawing.Point(152, 80);
+            this.cb_Type_accident.Location = new System.Drawing.Point(141, 80);
             this.cb_Type_accident.Name = "cb_Type_accident";
             this.cb_Type_accident.Size = new System.Drawing.Size(121, 21);
             this.cb_Type_accident.TabIndex = 6;
@@ -507,7 +519,7 @@
             // 
             // cb_seriuosness
             // 
-            this.cb_seriuosness.Location = new System.Drawing.Point(152, 26);
+            this.cb_seriuosness.Location = new System.Drawing.Point(141, 26);
             this.cb_seriuosness.Name = "cb_seriuosness";
             this.cb_seriuosness.Size = new System.Drawing.Size(121, 21);
             this.cb_seriuosness.TabIndex = 4;
@@ -515,6 +527,10 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.btn_create_new_qualification);
+            this.groupBox3.Controls.Add(this.btn_create_new_enterprise);
+            this.groupBox3.Controls.Add(this.btn_create_new_prof);
+            this.groupBox3.Controls.Add(this.btn_create_new_Shedule);
             this.groupBox3.Controls.Add(this.label44);
             this.groupBox3.Controls.Add(this.cb_enterprice);
             this.groupBox3.Controls.Add(this.cb_qualification);
@@ -633,7 +649,7 @@
             this.cb_Shedule.FormattingEnabled = true;
             this.cb_Shedule.Location = new System.Drawing.Point(467, 20);
             this.cb_Shedule.Name = "cb_Shedule";
-            this.cb_Shedule.Size = new System.Drawing.Size(163, 21);
+            this.cb_Shedule.Size = new System.Drawing.Size(143, 21);
             this.cb_Shedule.TabIndex = 11;
             this.cb_Shedule.DropDown += new System.EventHandler(this.cb_Shedule_DropDown);
             this.cb_Shedule.DropDownClosed += new System.EventHandler(this.cb_Shedule_DropDownClosed);
@@ -806,6 +822,7 @@
             // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.btn_create_new_education);
             this.groupBox5.Controls.Add(this.chb_check_knowledge);
             this.groupBox5.Controls.Add(this.chb_lost_instr);
             this.groupBox5.Controls.Add(this.chb_first_instr);
@@ -1050,6 +1067,7 @@
             // 
             // groupBox8
             // 
+            this.groupBox8.Controls.Add(this.btn_create_new_OVPF);
             this.groupBox8.Controls.Add(this.lb_ovpf);
             this.groupBox8.Location = new System.Drawing.Point(7, 214);
             this.groupBox8.Name = "groupBox8";
@@ -1427,6 +1445,96 @@
             this.btm_create.UseVisualStyleBackColor = true;
             this.btm_create.Click += new System.EventHandler(this.btm_create_Click);
             // 
+            // btn_create_new_seriuosness
+            // 
+            this.btn_create_new_seriuosness.Image = global::testing_program.Properties.Resources.button_add;
+            this.btn_create_new_seriuosness.Location = new System.Drawing.Point(264, 26);
+            this.btn_create_new_seriuosness.Name = "btn_create_new_seriuosness";
+            this.btn_create_new_seriuosness.Size = new System.Drawing.Size(22, 21);
+            this.btn_create_new_seriuosness.TabIndex = 14;
+            this.btn_create_new_seriuosness.UseVisualStyleBackColor = true;
+            this.btn_create_new_seriuosness.Click += new System.EventHandler(this.btn_create_new_seriuosness_Click);
+            // 
+            // btn_create_new_Type_accident
+            // 
+            this.btn_create_new_Type_accident.Image = global::testing_program.Properties.Resources.button_add;
+            this.btn_create_new_Type_accident.Location = new System.Drawing.Point(264, 80);
+            this.btn_create_new_Type_accident.Name = "btn_create_new_Type_accident";
+            this.btn_create_new_Type_accident.Size = new System.Drawing.Size(22, 21);
+            this.btn_create_new_Type_accident.TabIndex = 15;
+            this.btn_create_new_Type_accident.UseVisualStyleBackColor = true;
+            this.btn_create_new_Type_accident.Click += new System.EventHandler(this.btn_create_new_Type_accident_Click);
+            // 
+            // btn_create_code_reason
+            // 
+            this.btn_create_code_reason.Image = global::testing_program.Properties.Resources.button_add;
+            this.btn_create_code_reason.Location = new System.Drawing.Point(631, 58);
+            this.btn_create_code_reason.Name = "btn_create_code_reason";
+            this.btn_create_code_reason.Size = new System.Drawing.Size(22, 21);
+            this.btn_create_code_reason.TabIndex = 16;
+            this.btn_create_code_reason.UseVisualStyleBackColor = true;
+            this.btn_create_code_reason.Click += new System.EventHandler(this.btn_create_code_reason_Click);
+            // 
+            // btn_create_new_Shedule
+            // 
+            this.btn_create_new_Shedule.Image = global::testing_program.Properties.Resources.button_add;
+            this.btn_create_new_Shedule.Location = new System.Drawing.Point(623, 20);
+            this.btn_create_new_Shedule.Name = "btn_create_new_Shedule";
+            this.btn_create_new_Shedule.Size = new System.Drawing.Size(22, 21);
+            this.btn_create_new_Shedule.TabIndex = 23;
+            this.btn_create_new_Shedule.UseVisualStyleBackColor = true;
+            this.btn_create_new_Shedule.Click += new System.EventHandler(this.btn_create_new_Shedule_Click);
+            // 
+            // btn_create_new_prof
+            // 
+            this.btn_create_new_prof.Image = global::testing_program.Properties.Resources.button_add;
+            this.btn_create_new_prof.Location = new System.Drawing.Point(598, 54);
+            this.btn_create_new_prof.Name = "btn_create_new_prof";
+            this.btn_create_new_prof.Size = new System.Drawing.Size(22, 21);
+            this.btn_create_new_prof.TabIndex = 24;
+            this.btn_create_new_prof.UseVisualStyleBackColor = true;
+            this.btn_create_new_prof.Click += new System.EventHandler(this.btn_create_new_prof_Click);
+            // 
+            // btn_create_new_enterprise
+            // 
+            this.btn_create_new_enterprise.Image = global::testing_program.Properties.Resources.button_add;
+            this.btn_create_new_enterprise.Location = new System.Drawing.Point(598, 89);
+            this.btn_create_new_enterprise.Name = "btn_create_new_enterprise";
+            this.btn_create_new_enterprise.Size = new System.Drawing.Size(22, 19);
+            this.btn_create_new_enterprise.TabIndex = 25;
+            this.btn_create_new_enterprise.UseVisualStyleBackColor = true;
+            this.btn_create_new_enterprise.Click += new System.EventHandler(this.btn_create_new_enterprise_Click);
+            // 
+            // btn_create_new_qualification
+            // 
+            this.btn_create_new_qualification.Image = global::testing_program.Properties.Resources.button_add;
+            this.btn_create_new_qualification.Location = new System.Drawing.Point(282, 94);
+            this.btn_create_new_qualification.Name = "btn_create_new_qualification";
+            this.btn_create_new_qualification.Size = new System.Drawing.Size(22, 19);
+            this.btn_create_new_qualification.TabIndex = 26;
+            this.btn_create_new_qualification.UseVisualStyleBackColor = true;
+            this.btn_create_new_qualification.Click += new System.EventHandler(this.btn_create_new_qualification_Click);
+            // 
+            // btn_create_new_education
+            // 
+            this.btn_create_new_education.Image = global::testing_program.Properties.Resources.button_add;
+            this.btn_create_new_education.Location = new System.Drawing.Point(623, 98);
+            this.btn_create_new_education.Name = "btn_create_new_education";
+            this.btn_create_new_education.Size = new System.Drawing.Size(22, 19);
+            this.btn_create_new_education.TabIndex = 19;
+            this.btn_create_new_education.UseVisualStyleBackColor = true;
+            this.btn_create_new_education.Click += new System.EventHandler(this.btn_create_new_education_Click);
+            // 
+            // btn_create_new_OVPF
+            // 
+            this.btn_create_new_OVPF.Image = global::testing_program.Properties.Resources.button_add;
+            this.btn_create_new_OVPF.Location = new System.Drawing.Point(653, 19);
+            this.btn_create_new_OVPF.Name = "btn_create_new_OVPF";
+            this.btn_create_new_OVPF.Size = new System.Drawing.Size(24, 23);
+            this.btn_create_new_OVPF.TabIndex = 1;
+            this.btn_create_new_OVPF.UseVisualStyleBackColor = true;
+            this.btn_create_new_OVPF.Click += new System.EventHandler(this.btn_create_new_OVPF_Click);
+            // 
             // form_input_data
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1602,5 +1710,14 @@
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.Button btn_create_new_seriuosness;
+        private System.Windows.Forms.Button btn_create_new_Type_accident;
+        private System.Windows.Forms.Button btn_create_code_reason;
+        private System.Windows.Forms.Button btn_create_new_Shedule;
+        private System.Windows.Forms.Button btn_create_new_prof;
+        private System.Windows.Forms.Button btn_create_new_enterprise;
+        private System.Windows.Forms.Button btn_create_new_qualification;
+        private System.Windows.Forms.Button btn_create_new_education;
+        private System.Windows.Forms.Button btn_create_new_OVPF;
     }
 }

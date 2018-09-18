@@ -348,5 +348,61 @@ namespace testing_program
             DateTime dateTime = dtp_date_acc.Value.Date + dtp_Time_acc_work.Value.TimeOfDay;
             return (dateTime);
         }
+
+        private void btn_create_new_seriuosness_Click(object sender, EventArgs e)
+        {
+            form_create_new_seriuosness form_Create_New_Seriuosness = new form_create_new_seriuosness();
+            form_Create_New_Seriuosness.ShowDialog();
+        }
+
+        private void btn_create_new_Type_accident_Click(object sender, EventArgs e)
+        {
+            Form_create_new_Type_accident form_Create_New_Type_Accident = new Form_create_new_Type_accident();
+            form_Create_New_Type_Accident.ShowDialog();
+        }
+
+        private void btn_create_code_reason_Click(object sender, EventArgs e)
+        {
+            form_create_new_Code_reason form_Create_New_Code_Reason = new form_create_new_Code_reason();
+            form_Create_New_Code_Reason.ShowDialog();
+            cb_Drop_down.Drop_down_code_reason(lb_Code_reason);
+        }
+
+        private void btn_create_new_Shedule_Click(object sender, EventArgs e)
+        {
+            form_create_new_shedule form_Create_New_Shedule = new form_create_new_shedule();
+            form_Create_New_Shedule.ShowDialog();
+        }
+
+        private void btn_create_new_prof_Click(object sender, EventArgs e)
+        {
+            form_create_new_profession form_Create_New_Profession = new form_create_new_profession();
+            form_Create_New_Profession.ShowDialog();
+        }
+
+        private void btn_create_new_enterprise_Click(object sender, EventArgs e)
+        {
+            form_create_new_enterprise form_Create_New_Enterprise = new form_create_new_enterprise();
+            form_Create_New_Enterprise.ShowDialog();
+        }
+
+        private void btn_create_new_qualification_Click(object sender, EventArgs e)
+        {
+            form_create_new_qualification form_Create_New_Qualification = new form_create_new_qualification();
+            form_Create_New_Qualification.ShowDialog();
+        }
+
+        private void btn_create_new_education_Click(object sender, EventArgs e)
+        {
+            form_create_new_education form_Create_New_Education = new form_create_new_education();
+            form_Create_New_Education.ShowDialog();
+        }
+
+        private void btn_create_new_OVPF_Click(object sender, EventArgs e)
+        {
+            form_create_new_OVPF form_Create_New_OVPF = new form_create_new_OVPF();
+            form_Create_New_OVPF.ShowDialog();
+            cb_Drop_down.Drop_down_OVPF(lb_ovpf);
+        }
     }
 }

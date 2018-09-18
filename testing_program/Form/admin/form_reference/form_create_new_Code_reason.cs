@@ -25,7 +25,7 @@ namespace testing_program
 
         private void btn_create_Click(object sender, EventArgs e)
         {
-            string create_code_reason_Query_sql = "INSERT INTO Code_reason (code,subcode,Name) VALUES (N'" + tb_code.Text + "',N'" + tb_subcode.Text + "',N'" + tb_name.Text + "');";
+            string create_code_reason_Query_sql = "INSERT INTO Code_reason (N_code,Name) VALUES (N'" + tb_code.Text + "',N'" + tb_name.Text + "');";
             Create_SQL_Command create_SQL_Command = new Create_SQL_Command(create_code_reason_Query_sql);
             SqlCommand Command = create_SQL_Command.get_SQL_Command();
             Command.ExecuteNonQuery();

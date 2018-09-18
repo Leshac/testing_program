@@ -407,6 +407,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Form\testing_Form.resx">
       <DependentUpon>testing_Form.cs</DependentUpon>
@@ -431,6 +432,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\button_add.jpg" />
     <Content Include="Roden_Big.ico" />
   </ItemGroup>
   <ItemGroup>

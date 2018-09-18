@@ -25,7 +25,7 @@ namespace testing_program
 
         private void btn_create_Click(object sender, EventArgs e)
         {
-            string create_new_OVPF_Query_sql = "INSERT INTO OVPF (code_factor,Name) VALUES (N'" + tb_code_factor.Text + "',N'" + tb_name.Text + "');";
+            string create_new_OVPF_Query_sql = "INSERT INTO OVPF (Name) VALUES (N'" + tb_name.Text + "');";
             Create_SQL_Command create_SQL_Command = new Create_SQL_Command(create_new_OVPF_Query_sql);
             SqlCommand Command = create_SQL_Command.get_SQL_Command();
             Command.ExecuteNonQuery();
