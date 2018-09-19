@@ -302,6 +302,7 @@
       <DependentUpon>testing_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="Data Base\working_with_sql.cs" />
+    <Compile Include="test_logic_program\test_double_people_for_edu.cs" />
     <Compile Include="update_DB.cs" />
     <EmbeddedResource Include="Form\admin\Admin_panel.resx">
       <DependentUpon>Admin_panel.cs</DependentUpon>

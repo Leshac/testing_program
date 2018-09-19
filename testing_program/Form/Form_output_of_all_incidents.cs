@@ -200,7 +200,7 @@ namespace testing_program
 " JOIN datesInstructions on datesInstructions.id_hum= People_for_edu.id" +
 " JOIN Work_actions   on Work_actions.id_work_human= People_for_edu.id" +
 " JOIN Work   on Work.id = Work_actions.id_work" +
-" JOIN Workplace on Workplace.id_people= People_for_edu.id" +
+" LEFT JOIN Workplace on Workplace.id_people= People_for_edu.id" +
 " LEFT JOIN SOUT_ARM on SOUT_ARM.id_SOUT= Workplace.id_sout" +
 
 

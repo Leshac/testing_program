@@ -94,8 +94,8 @@ namespace testing_program
         private void btn_insert_data_Click(object sender, EventArgs e)
         {
             form_input_data form_Input_Data = new form_input_data();
-            form_Input_Data.ShowDialog();
-            this.Close();
+            form_Input_Data.Show();
+            
         }
     }
 }
