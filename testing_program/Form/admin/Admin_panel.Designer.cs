@@ -41,6 +41,7 @@
             this.btn_create_new_people_for_edu = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.btn_show_all_incidents = new System.Windows.Forms.Button();
             this.btn_insert_reference_values = new System.Windows.Forms.Button();
             this.btn_create_new_type_result_check = new System.Windows.Forms.Button();
             this.btn_create_new_Name_type_check_knowledge = new System.Windows.Forms.Button();
@@ -64,7 +65,8 @@
             this.btn_create_new_instruct = new System.Windows.Forms.Button();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.btn_inset_new_info_people_in_work = new System.Windows.Forms.Button();
-            this.btn_show_all_incidents = new System.Windows.Forms.Button();
+            this.btn_test_new_func = new System.Windows.Forms.Button();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
             this.tabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -72,6 +74,7 @@
             this.tabPage4.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.tabPage6.SuspendLayout();
+            this.tabPage7.SuspendLayout();
             this.SuspendLayout();
             // 
             // Btn_new_user
@@ -132,6 +135,7 @@
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Controls.Add(this.tabPage6);
+            this.tabControl1.Controls.Add(this.tabPage7);
             this.tabControl1.Location = new System.Drawing.Point(0, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -219,6 +223,16 @@
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Справочники";
             this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // btn_show_all_incidents
+            // 
+            this.btn_show_all_incidents.Location = new System.Drawing.Point(497, 154);
+            this.btn_show_all_incidents.Name = "btn_show_all_incidents";
+            this.btn_show_all_incidents.Size = new System.Drawing.Size(216, 26);
+            this.btn_show_all_incidents.TabIndex = 17;
+            this.btn_show_all_incidents.Text = "Показать все инциденты";
+            this.btn_show_all_incidents.UseVisualStyleBackColor = true;
+            this.btn_show_all_incidents.Click += new System.EventHandler(this.btn_show_all_incidents_Click);
             // 
             // btn_insert_reference_values
             // 
@@ -452,15 +466,25 @@
             this.btn_inset_new_info_people_in_work.UseVisualStyleBackColor = true;
             this.btn_inset_new_info_people_in_work.Click += new System.EventHandler(this.btn_inset_new_info_people_in_work_Click);
             // 
-            // btn_show_all_incidents
+            // btn_test_new_func
             // 
-            this.btn_show_all_incidents.Location = new System.Drawing.Point(497, 154);
-            this.btn_show_all_incidents.Name = "btn_show_all_incidents";
-            this.btn_show_all_incidents.Size = new System.Drawing.Size(216, 26);
-            this.btn_show_all_incidents.TabIndex = 17;
-            this.btn_show_all_incidents.Text = "Показать все инциденты";
-            this.btn_show_all_incidents.UseVisualStyleBackColor = true;
-            this.btn_show_all_incidents.Click += new System.EventHandler(this.btn_show_all_incidents_Click);
+            this.btn_test_new_func.Location = new System.Drawing.Point(56, 37);
+            this.btn_test_new_func.Name = "btn_test_new_func";
+            this.btn_test_new_func.Size = new System.Drawing.Size(255, 23);
+            this.btn_test_new_func.TabIndex = 7;
+            this.btn_test_new_func.Text = "Тестирование новых возможностей";
+            this.btn_test_new_func.UseVisualStyleBackColor = true;
+            this.btn_test_new_func.Click += new System.EventHandler(this.btn_test_new_func_Click);
+            // 
+            // tabPage7
+            // 
+            this.tabPage7.Controls.Add(this.btn_test_new_func);
+            this.tabPage7.Location = new System.Drawing.Point(4, 22);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Size = new System.Drawing.Size(813, 263);
+            this.tabPage7.TabIndex = 6;
+            this.tabPage7.Text = "Не входить";
+            this.tabPage7.UseVisualStyleBackColor = true;
             // 
             // Admin_panel
             // 
@@ -479,6 +503,7 @@
             this.tabPage4.ResumeLayout(false);
             this.tabPage5.ResumeLayout(false);
             this.tabPage6.ResumeLayout(false);
+            this.tabPage7.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -521,5 +546,7 @@
         private System.Windows.Forms.Button btn_create_new_type_result_check;
         private System.Windows.Forms.Button btn_insert_reference_values;
         private System.Windows.Forms.Button btn_show_all_incidents;
+        private System.Windows.Forms.TabPage tabPage7;
+        private System.Windows.Forms.Button btn_test_new_func;
     }
 }

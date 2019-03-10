@@ -197,7 +197,7 @@ namespace testing_program
 " JOIN seriuosness on seriuosness.id= id_seriousness" +
 " JOIN Type_accident on Type_accident.id_type = test2.id_type" +
 " JOIN Sex on sex.id= People_for_edu.id_sex" +
-" JOIN datesInstructions on datesInstructions.id_hum= People_for_edu.id" +
+" LEFT JOIN datesInstructions on datesInstructions.id_hum= People_for_edu.id" +
 " JOIN Work_actions   on Work_actions.id_work_human= People_for_edu.id" +
 " JOIN Work   on Work.id = Work_actions.id_work" +
 " LEFT JOIN Workplace on Workplace.id_people= People_for_edu.id" +

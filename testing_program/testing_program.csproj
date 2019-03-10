@@ -70,6 +70,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Fuzzy_Sets\count_old_in_acc.cs" />
+    <Compile Include="Fuzzy_Sets\Fuzzy_Sets.cs" />
     <Compile Include="Logic\calculation_ut.cs" />
     <Compile Include="cb_Drop_down.cs" />
     <Compile Include="ConectionSQL_string.cs" />
@@ -294,6 +296,12 @@
     <Compile Include="Form\survey_form_.Designer.cs">
       <DependentUpon>survey_form_.cs</DependentUpon>
     </Compile>
+    <Compile Include="server\server_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="server\server_form.Designer.cs">
+      <DependentUpon>server_form.cs</DependentUpon>
+    </Compile>
     <Compile Include="static_test_result.cs" />
     <Compile Include="Form\testing_Form.cs">
       <SubType>Form</SubType>
@@ -418,6 +426,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form\result.resx">
       <DependentUpon>result.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="server\server_form.resx">
+      <DependentUpon>server_form.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

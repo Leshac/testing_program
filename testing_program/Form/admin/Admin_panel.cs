@@ -206,5 +206,11 @@ namespace testing_program
             Form_output_of_all_incidents form_Output_Of_All_Incidents = new Form_output_of_all_incidents();
             form_Output_Of_All_Incidents.Show();
         }
+
+        private void btn_test_new_func_Click(object sender, EventArgs e)
+        {
+            Fuzzy_Sets fuzzy_Sets = new Fuzzy_Sets();
+            fuzzy_Sets.test();
+        }
     }
 }

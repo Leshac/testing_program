@@ -97,5 +97,13 @@ namespace testing_program
             form_Input_Data.Show();
             
         }
+
+        private void btn_server_form_Click_1(object sender, EventArgs e)
+        {
+            server_form server_Form = new server_form();
+            
+            server_Form.ShowDialog();
+            
+        }
     }
 }

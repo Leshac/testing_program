@@ -38,6 +38,7 @@
             this.tb_Password = new System.Windows.Forms.TextBox();
             this.Btn_admin = new System.Windows.Forms.Button();
             this.btn_insert_data = new System.Windows.Forms.Button();
+            this.btn_server_form = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Btn_login
@@ -125,11 +126,22 @@
             this.btn_insert_data.UseVisualStyleBackColor = true;
             this.btn_insert_data.Click += new System.EventHandler(this.btn_insert_data_Click);
             // 
+            // btn_server_form
+            // 
+            this.btn_server_form.Location = new System.Drawing.Point(173, 199);
+            this.btn_server_form.Name = "btn_server_form";
+            this.btn_server_form.Size = new System.Drawing.Size(162, 23);
+            this.btn_server_form.TabIndex = 10;
+            this.btn_server_form.Text = "Режим работы сервера";
+            this.btn_server_form.UseVisualStyleBackColor = true;
+            this.btn_server_form.Click += new System.EventHandler(this.btn_server_form_Click_1);
+            // 
             // Form_Authorization
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(616, 249);
+            this.Controls.Add(this.btn_server_form);
             this.Controls.Add(this.btn_insert_data);
             this.Controls.Add(this.Btn_admin);
             this.Controls.Add(this.tb_Password);
@@ -158,6 +170,7 @@
         private System.Windows.Forms.TextBox tb_Password;
         private System.Windows.Forms.Button Btn_admin;
         private System.Windows.Forms.Button btn_insert_data;
+        private System.Windows.Forms.Button btn_server_form;
     }
 }
 
