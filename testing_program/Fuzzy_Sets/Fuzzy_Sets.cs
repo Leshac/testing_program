@@ -22,8 +22,18 @@ namespace testing_program
             count_old_in_acc count_Old_45_49 = new count_old_in_acc(45, 50);
             count_old_in_acc count_Old_50_54 = new count_old_in_acc(50, 55);
             count_old_in_acc count_Old_55_59 = new count_old_in_acc(55, 60);
+            count_old_in_acc count_Old_60_99 = new count_old_in_acc(60, 100);
             get_all_acc();
-            double pi_18_25= get_hit_frequency(count_Old_18_24.get_count_old());
+            double pi_18_24= get_hit_frequency(count_Old_18_24.get_count_old());
+            double pi_25_29 = get_hit_frequency(count_Old_25_29.get_count_old());
+            double pi_30_34 = get_hit_frequency(count_Old_30_34.get_count_old());
+            double pi_35_39 = get_hit_frequency(count_Old_35_39.get_count_old());
+            double pi_40_44 = get_hit_frequency(count_Old_40_44.get_count_old());
+            double pi_45_49 = get_hit_frequency(count_Old_45_49.get_count_old());
+            double pi_50_54 = get_hit_frequency(count_Old_50_54.get_count_old());
+            double pi_55_59 = get_hit_frequency(count_Old_55_59.get_count_old());
+            double pi_60_99 = get_hit_frequency(count_Old_60_99.get_count_old());
+
 
             int b = 1;
         }

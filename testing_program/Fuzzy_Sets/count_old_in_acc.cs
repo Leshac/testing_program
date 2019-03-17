@@ -17,7 +17,7 @@ namespace testing_program
         {
             min_year = _min_year;
             max_year = _max_year;
-            get_old_in_acc(min_year,max_year);
+           // get_old_in_acc(min_year,max_year);
         }
 
         private void get_old_in_acc(int min_year, int max_year)
@@ -29,10 +29,21 @@ namespace testing_program
 
             SqlCommand sqlCommand = new SqlCommand(sqlquery,sqlConnection);
             count_old=(int)sqlCommand.ExecuteScalar();
+
+            sqlConnection.Close();
         }
 
         public int get_count_old()
         {
+            SqlConnection sqlConnection = new SqlConnection(ConectionSQL_string.sql_string);
+            sqlConnection.Open();
+
+            string sqlquery = $"SELECT Count(Age_on_accident) From Acc Where Age_on_accident>= "+min_year+" AND Age_on_accident < "+max_year+"";
+            SqlCommand sqlCommand = new SqlCommand(sqlquery, sqlConnection);
+            count_old = (int)sqlCommand.ExecuteScalar();
+
+            sqlConnection.Close();
+
             return (count_old);
         }
     }

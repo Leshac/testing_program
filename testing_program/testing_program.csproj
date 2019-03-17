@@ -71,6 +71,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Fuzzy_Sets\count_old_in_acc.cs" />
+    <Compile Include="Fuzzy_Sets\FuzzySets.cs" />
     <Compile Include="Fuzzy_Sets\Fuzzy_Sets.cs" />
     <Compile Include="Logic\calculation_ut.cs" />
     <Compile Include="cb_Drop_down.cs" />
